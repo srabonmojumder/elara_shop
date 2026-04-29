@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, useRef, useCallback } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -100,9 +101,9 @@ export default function ProductDetailClient({
     <div className="bg-surface min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4 md:py-6">
         <nav className="text-xs text-text-muted mb-3 sm:mb-4 md:mb-6 hidden sm:block">
-          <a href="/" className="hover:text-accent transition-colors">Home</a>
+          <Link href="/" className="hover:text-accent transition-colors">Home</Link>
           <span className="mx-2">/</span>
-          <a href="/products" className="hover:text-accent transition-colors">Products</a>
+          <Link href="/products" className="hover:text-accent transition-colors">Products</Link>
           <span className="mx-2">/</span>
           <span className="text-text-primary">{product.name}</span>
         </nav>

@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import { Eye, Keyboard, Volume2, Contrast, MousePointer, Heart } from "lucide-react";
 import PolicyLayout from "@/components/page/PolicyLayout";
+
+export const metadata: Metadata = {
+  title: "Accessibility",
+  description:
+    "How we build elarashop.com and our stores to welcome everyone — plus where we fall short and what we're doing about it.",
+};
+
 
 const features = [
   { icon: Keyboard, title: "Full keyboard navigation", description: "Every interactive element is reachable via keyboard with visible focus states." },

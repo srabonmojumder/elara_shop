@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "luxecart-store"
+  },
+  "targets": {
+    "luxecart-store": {
+      "hosting": {
+        "elara-shop": [
+          "elara-shop"
+        ]
+      }
+    }
+  }
+}

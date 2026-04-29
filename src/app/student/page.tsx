@@ -1,9 +1,17 @@
+import type { Metadata } from "next";
 import Image from "next/image";
-import { GraduationCap, Percent, Sparkles, ShieldCheck, CheckCircle2, Users, Gift, Clock } from "lucide-react";
+import { GraduationCap, Percent, Sparkles, ShieldCheck, Users, Gift, Clock } from "lucide-react";
 import PageHeader from "@/components/page/PageHeader";
 import SectionHeading from "@/components/page/SectionHeading";
 import FAQAccordion from "@/components/page/FAQAccordion";
 import CTASection from "@/components/page/CTASection";
+
+export const metadata: Metadata = {
+  title: "Student Discount",
+  description:
+    "Real style. Student prices. Verified students get 10% off everything, every order, no minimum spend.",
+};
+
 
 const perks = [
   { icon: Percent, title: "15% off every order", description: "Automatically applied at checkout — stacks with free shipping." },

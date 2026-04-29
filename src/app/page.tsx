@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { flashOffers, newArrivals, bestSellers } from "@/data/mock";
 import HeroBanner from "@/components/home/HeroBanner";
 import CategoryBar from "@/components/home/CategoryBar";
@@ -7,6 +8,12 @@ import PromoBanners from "@/components/home/PromoBanners";
 import PromoBanner from "@/components/home/PromoBanner";
 import BrandShowcase from "@/components/home/BrandShowcase";
 import NewsletterStrip from "@/components/layout/NewsletterStrip";
+
+export const metadata: Metadata = {
+  title: "Elara Shop — Premium Fashion, Footwear & Lifestyle",
+  description:
+    "Discover quietly luxurious fashion, footwear, accessories, and home pieces. Free shipping on orders over €49. New arrivals weekly.",
+};
 
 export default function HomePage() {
   return (

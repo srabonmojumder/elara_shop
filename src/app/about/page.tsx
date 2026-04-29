@@ -1,6 +1,6 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import {
-  Sparkles,
   Heart,
   Leaf,
   Users,
@@ -13,6 +13,13 @@ import PageHeader from "@/components/page/PageHeader";
 import SectionHeading from "@/components/page/SectionHeading";
 import FeatureGrid from "@/components/page/FeatureGrid";
 import CTASection from "@/components/page/CTASection";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Two sisters, one Milano boutique, and a thousand considered pieces. The story of Elara Shop, from a 30m² store to Europe's most-loved fashion destination.",
+};
+
 
 const stats = [
   { value: "2.4M+", label: "Happy customers" },

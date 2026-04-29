@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import PolicyLayout from "@/components/page/PolicyLayout";
+
+export const metadata: Metadata = {
+  title: "Terms of Service",
+  description:
+    "The terms governing your use of elarashop.com — written in plain language, covering accounts, orders, and your rights as a customer.",
+};
+
 
 const sections = [
   {

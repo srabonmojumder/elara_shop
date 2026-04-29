@@ -16,7 +16,7 @@ const featured = {
   date: "April 14, 2026",
   readTime: "7 min",
   image: "/images/categories/women.jpg",
-  href: "/blog/beauty-tips",
+  href: "/blog/style-notes",
 };
 
 const posts = [
@@ -154,7 +154,7 @@ export default function BlogPage() {
             {filtered.map((post) => (
               <a
                 key={post.title}
-                href="/blog/beauty-tips"
+                href="/blog/style-notes"
                 className="group"
               >
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden mb-4 bg-surface-tertiary">

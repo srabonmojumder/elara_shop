@@ -1,9 +1,17 @@
+import type { Metadata } from "next";
 import { Truck, Zap, Globe, Package, Clock, ShieldCheck, Leaf, MapPin } from "lucide-react";
 import PageHeader from "@/components/page/PageHeader";
 import SectionHeading from "@/components/page/SectionHeading";
 import FAQAccordion from "@/components/page/FAQAccordion";
 import FeatureGrid from "@/components/page/FeatureGrid";
 import CTASection from "@/components/page/CTASection";
+
+export const metadata: Metadata = {
+  title: "Shipping & Delivery",
+  description:
+    "Free shipping on orders over €49. Express, standard, and international rates explained — plus what to expect at every step.",
+};
+
 
 const shippingOptions = [
   {

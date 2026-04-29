@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import {
   RefreshCw,
   PackageCheck,
@@ -12,6 +13,13 @@ import PageHeader from "@/components/page/PageHeader";
 import SectionHeading from "@/components/page/SectionHeading";
 import FAQAccordion from "@/components/page/FAQAccordion";
 import CTASection from "@/components/page/CTASection";
+
+export const metadata: Metadata = {
+  title: "Returns & Refunds",
+  description:
+    "30-day returns on most items, free for EU & UK. Here's exactly how it works, what's eligible, and how long refunds take.",
+};
+
 
 const steps = [
   {

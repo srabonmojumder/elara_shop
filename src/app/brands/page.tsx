@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import { Search, Star, ArrowUpRight, Sparkles, X } from "lucide-react";
@@ -203,7 +204,7 @@ export default function BrandsPage() {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 md:pt-16 pb-16 md:pb-20">
           <nav className="flex items-center gap-1 text-xs text-text-muted mb-8" aria-label="Breadcrumb">
-            <a href="/" className="hover:text-accent transition-colors">Home</a>
+            <Link href="/" className="hover:text-accent transition-colors">Home</Link>
             <span>/</span>
             <span className="text-text-primary">Brands</span>
           </nav>

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import {
   Leaf,
@@ -6,8 +7,6 @@ import {
   Droplet,
   Truck,
   Heart,
-  Package,
-  Building2,
   Award,
   TreePine,
 } from "lucide-react";
@@ -15,6 +14,13 @@ import PageHeader from "@/components/page/PageHeader";
 import SectionHeading from "@/components/page/SectionHeading";
 import FeatureGrid from "@/components/page/FeatureGrid";
 import CTASection from "@/components/page/CTASection";
+
+export const metadata: Metadata = {
+  title: "Sustainability",
+  description:
+    "Style shouldn't cost the earth — literally. How we're making every step of the Elara Shop journey lighter on the planet, and the people on it.",
+};
+
 
 const impactStats = [
   { value: "100%", label: "Carbon-neutral shipping", detail: "Every parcel, offset through verified reforestation" },

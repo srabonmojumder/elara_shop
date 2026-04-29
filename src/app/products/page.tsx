@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, useMemo, useEffect } from "react";
 import { newArrivals, bestSellers, flashOffers } from "@/data/mock";
 import ProductCard from "@/components/product/ProductCard";
@@ -214,7 +215,7 @@ export default function ProductsPage() {
         {/* Header */}
         <div className="mb-6">
           <nav className="text-xs text-text-muted mb-3">
-            <a href="/" className="hover:text-accent">Home</a>
+            <Link href="/" className="hover:text-accent">Home</Link>
             <span className="mx-2">/</span>
             <span className="text-text-primary">All Products</span>
           </nav>

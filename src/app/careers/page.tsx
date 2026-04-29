@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import {
   Heart,
   Zap,
@@ -10,7 +11,6 @@ import {
   Users,
   CheckCircle2,
   Quote,
-  ArrowRight,
   Briefcase,
   Globe2,
   Palette,
@@ -20,6 +20,13 @@ import PageHeader from "@/components/page/PageHeader";
 import SectionHeading from "@/components/page/SectionHeading";
 import FeatureGrid from "@/components/page/FeatureGrid";
 import CTASection from "@/components/page/CTASection";
+
+export const metadata: Metadata = {
+  title: "Careers",
+  description:
+    "Build the future of fashion with us — 140 people across Milano, Paris, and London building the home of premium fashion online.",
+};
+
 
 const perks = [
   { icon: Heart, title: "Health & wellness", description: "Premium private health, dental, and 1:1 mental health sessions for you and your family." },

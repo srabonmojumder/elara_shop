@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import PolicyLayout from "@/components/page/PolicyLayout";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "How Elara Shop collects, uses, and protects your personal information — written plainly, with the details you actually want.",
+};
+
 
 const sections = [
   {

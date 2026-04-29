@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import {
   Instagram,
@@ -63,7 +64,7 @@ const footerSections = [
     title: "Community",
     links: [
       { label: "Blog", href: "/blog" },
-      { label: "Style Notes", href: "/blog/beauty-tips" },
+      { label: "Style Notes", href: "/blog/style-notes" },
       { label: "Brand Directory", href: "/brands" },
       { label: "Store Locator", href: "/stores" },
     ],
@@ -137,14 +138,14 @@ export default function Footer() {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <a href="/" className="flex items-center gap-2 shrink-0" aria-label="Elara Shop — Home">
+                <Link href="/" className="flex items-center gap-2 shrink-0" aria-label="Elara Shop — Home">
                   <div className="w-6 h-6 bg-accent rounded flex items-center justify-center">
                     <span className="text-white font-extrabold text-[10px]">E</span>
                   </div>
                   <span className="text-sm font-extrabold tracking-tight">
                     Elara Shop
                   </span>
-                </a>
+                </Link>
               </div>
               <span className="text-xs text-text-muted hidden sm:inline">|</span>
               <div className="hidden sm:flex items-center gap-3">

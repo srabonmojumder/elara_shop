@@ -180,7 +180,7 @@ const services = [
 export default function StoresPage() {
   const [query, setQuery] = useState("");
   const [country, setCountry] = useState("ALL");
-  const [hoveredCity, setHoveredCity] = useState<string | null>(null);
+  const [, setHoveredCity] = useState<string | null>(null);
 
   const filtered = useMemo(() => {
     return stores.filter((s) => {

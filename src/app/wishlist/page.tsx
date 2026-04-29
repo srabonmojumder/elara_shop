@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { Heart, ShoppingBag, X, ArrowRight, Star, Check } from "lucide-react";
 import { useWishlist } from "@/context/WishlistContext";
@@ -20,13 +21,13 @@ export default function WishlistPage() {
           Save your favorite products here so you can easily find them later.
           Start browsing and tap the heart icon on any product.
         </p>
-        <a
+        <Link
           href="/products"
           className="inline-flex items-center gap-2 px-8 py-3 bg-accent text-white text-sm font-semibold uppercase tracking-wider hover:bg-accent-dark transition-colors"
         >
           Explore Products
           <ArrowRight className="w-4 h-4" />
-        </a>
+        </Link>
       </div>
     );
   }
@@ -34,7 +35,7 @@ export default function WishlistPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10">
       <nav className="text-xs text-text-muted mb-6">
-        <a href="/" className="hover:text-accent">Home</a>
+        <Link href="/" className="hover:text-accent">Home</Link>
         <span className="mx-2">/</span>
         <span className="text-text-primary">Wishlist</span>
       </nav>

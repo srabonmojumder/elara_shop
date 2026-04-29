@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { Minus, Plus, X, ShoppingBag, ArrowRight, Truck } from "lucide-react";
 import { useCart } from "@/context/CartContext";
@@ -23,13 +24,13 @@ export default function CartPage() {
           Looks like you haven&apos;t added anything to your cart yet.
           Browse our collection and find something you love.
         </p>
-        <a
+        <Link
           href="/products"
           className="inline-flex items-center gap-2 px-8 py-3 bg-accent text-white text-sm font-semibold uppercase tracking-wider hover:bg-accent-dark transition-colors"
         >
           Start Shopping
           <ArrowRight className="w-4 h-4" />
-        </a>
+        </Link>
       </div>
     );
   }
@@ -37,7 +38,7 @@ export default function CartPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10">
       <nav className="text-xs text-text-muted mb-6">
-        <a href="/" className="hover:text-accent">Home</a>
+        <Link href="/" className="hover:text-accent">Home</Link>
         <span className="mx-2">/</span>
         <span className="text-text-primary">Shopping Cart</span>
       </nav>
@@ -187,19 +188,19 @@ export default function CartPage() {
               </div>
             </div>
 
-            <a
+            <Link
               href="/checkout"
               className="block w-full py-3.5 bg-accent text-white text-sm font-semibold uppercase tracking-wider hover:bg-accent-dark transition-colors text-center mb-3"
             >
               Proceed to Checkout
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/products"
               className="block text-center text-xs font-medium text-text-secondary hover:text-accent transition-colors"
             >
               Continue Shopping
-            </a>
+            </Link>
           </div>
         </div>
       </div>

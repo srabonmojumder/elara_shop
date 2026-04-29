@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import {
   CheckCircle,
@@ -155,42 +156,42 @@ export default function OrderConfirmationPage() {
             team is here to help.
           </p>
           <div className="flex flex-wrap gap-3">
-            <a
+            <Link
               href="/track-order"
               className="px-4 py-2.5 text-xs font-semibold uppercase tracking-wider border border-border rounded-lg hover:border-accent hover:text-accent transition-colors"
             >
               Track Order
-            </a>
-            <a
+            </Link>
+            <Link
               href="/help"
               className="px-4 py-2.5 text-xs font-semibold uppercase tracking-wider border border-border rounded-lg hover:border-accent hover:text-accent transition-colors"
             >
               Contact Support
-            </a>
-            <a
+            </Link>
+            <Link
               href="/returns"
               className="px-4 py-2.5 text-xs font-semibold uppercase tracking-wider border border-border rounded-lg hover:border-accent hover:text-accent transition-colors"
             >
               Returns Policy
-            </a>
+            </Link>
           </div>
         </div>
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-3 animate-fade-in-up">
-          <a
+          <Link
             href="/"
             className="flex-1 flex items-center justify-center gap-2 py-3.5 bg-accent text-white text-sm font-semibold uppercase tracking-wider rounded-lg hover:bg-accent-dark transition-colors text-center"
           >
             Continue Shopping
             <ArrowRight className="w-4 h-4" />
-          </a>
-          <a
+          </Link>
+          <Link
             href="/products"
             className="flex-1 flex items-center justify-center py-3.5 border border-border text-sm font-semibold uppercase tracking-wider rounded-lg text-text-primary hover:border-accent hover:text-accent transition-colors text-center"
           >
             Browse Products
-          </a>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import { ShoppingBag, User, Heart, Menu } from "lucide-react";
 import { useCart } from "@/context/CartContext";
@@ -44,35 +45,35 @@ export default function Header() {
                   <Menu className="w-6 h-6" />
                 </button>
 
-                <a href="/" className="flex items-center gap-2.5 shrink-0" aria-label="Elara Shop — Home">
+                <Link href="/" className="flex items-center gap-2.5 shrink-0" aria-label="Elara Shop — Home">
                   <div className="w-8 h-8 bg-accent rounded flex items-center justify-center">
                     <span className="text-white font-extrabold text-sm">E</span>
                   </div>
                   <span className="text-lg sm:text-xl font-extrabold tracking-tight text-text-primary">
                     Elara Shop
                   </span>
-                </a>
+                </Link>
               </div>
 
               <SearchBar />
 
               <div className="flex items-center gap-0.5 sm:gap-1">
                 <ThemeToggle />
-                <a href="/account" className="hidden sm:block">
+                <Link href="/account" className="hidden sm:block">
                   <IconButton aria-label="Account">
                     <User className="w-5 h-5" />
                   </IconButton>
-                </a>
-                <a href="/wishlist">
+                </Link>
+                <Link href="/wishlist">
                   <IconButton badge={wishlistCount} aria-label="Wishlist">
                     <Heart className="w-5 h-5" />
                   </IconButton>
-                </a>
-                <a href="/cart">
+                </Link>
+                <Link href="/cart">
                   <IconButton badge={cartCount} aria-label="Cart">
                     <ShoppingBag className="w-5 h-5" />
                   </IconButton>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

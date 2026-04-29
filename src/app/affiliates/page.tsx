@@ -1,8 +1,16 @@
+import type { Metadata } from "next";
 import { TrendingUp, Wallet, BarChart3, Share2, Link2, Gift, ShieldCheck, Users, CheckCircle2 } from "lucide-react";
 import PageHeader from "@/components/page/PageHeader";
 import SectionHeading from "@/components/page/SectionHeading";
 import FAQAccordion from "@/components/page/FAQAccordion";
 import CTASection from "@/components/page/CTASection";
+
+export const metadata: Metadata = {
+  title: "Affiliate Program",
+  description:
+    "Turn your love of style into a stream of income. Up to 20% commission, real-time analytics, and a partnership team that actually picks up the phone.",
+};
+
 
 const tiers = [
   {

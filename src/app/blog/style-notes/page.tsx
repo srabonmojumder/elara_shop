@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import {
   Clock,
@@ -11,6 +12,13 @@ import {
 } from "lucide-react";
 import PageHeader from "@/components/page/PageHeader";
 import SectionHeading from "@/components/page/SectionHeading";
+
+export const metadata: Metadata = {
+  title: "Building a Capsule Wardrobe",
+  description:
+    "A stylist explains why capsule dressing isn't marketing — it's mathematics. Twelve well-chosen pieces, ninety distinct looks. Here's the framework.",
+};
+
 
 const relatedPosts = [
   { category: "Style", title: "Tailoring for beginners: the 6 rules that actually matter", readTime: "10 min", image: "/images/hero/hero-1.jpg" },
@@ -206,7 +214,7 @@ export default function BlogArticlePage() {
         <SectionHeading eyebrow="Keep reading" title="You may also like" />
         <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {relatedPosts.map((p) => (
-            <a key={p.title} href="/blog/beauty-tips" className="group">
+            <a key={p.title} href="/blog/style-notes" className="group">
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden mb-4 bg-surface-tertiary">
                 <Image
                   src={p.image}

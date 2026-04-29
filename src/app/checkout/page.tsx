@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
 import {
@@ -146,9 +147,9 @@ export default function CheckoutPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 text-center">
         <h1 className="text-2xl font-bold mb-3">No items to checkout</h1>
         <p className="text-text-secondary text-sm mb-8">Add products to your cart first.</p>
-        <a href="/products" className="inline-flex items-center gap-2 px-8 py-3 bg-accent text-white text-sm font-semibold uppercase tracking-wider hover:bg-accent-dark transition-colors">
+        <Link href="/products" className="inline-flex items-center gap-2 px-8 py-3 bg-accent text-white text-sm font-semibold uppercase tracking-wider hover:bg-accent-dark transition-colors">
           Browse Products
-        </a>
+        </Link>
       </div>
     );
   }
@@ -227,16 +228,16 @@ export default function CheckoutPage() {
       {/* Top bar */}
       <div className="bg-surface border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-          <a href="/cart" className="flex items-center gap-2 text-sm text-text-secondary hover:text-accent transition-colors">
+          <Link href="/cart" className="flex items-center gap-2 text-sm text-text-secondary hover:text-accent transition-colors">
             <ArrowLeft className="w-4 h-4" />
             <span className="hidden sm:inline">Back to cart</span>
-          </a>
-          <a href="/" className="flex items-center gap-2">
+          </Link>
+          <Link href="/" className="flex items-center gap-2">
             <div className="w-7 h-7 bg-accent rounded flex items-center justify-center">
               <span className="text-white font-extrabold text-xs">E</span>
             </div>
             <span className="text-lg font-extrabold tracking-tight text-text-primary">Elara Shop</span>
-          </a>
+          </Link>
           <div className="flex items-center gap-1.5 text-xs text-text-muted">
             <Lock className="w-3.5 h-3.5" />
             <span className="hidden sm:inline">Secure Checkout</span>

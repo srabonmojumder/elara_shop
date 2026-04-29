@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { Zap, Clock, Flame, ArrowRight, Bell } from "lucide-react";
+import { Zap, Clock, ArrowRight, Bell } from "lucide-react";
 import PageHeader from "@/components/page/PageHeader";
 import SectionHeading from "@/components/page/SectionHeading";
 

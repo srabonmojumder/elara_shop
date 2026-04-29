@@ -13,7 +13,6 @@ import {
   HelpCircle,
   MessageSquare,
   Mail,
-  ArrowRight,
 } from "lucide-react";
 import PageHeader from "@/components/page/PageHeader";
 import FAQAccordion from "@/components/page/FAQAccordion";

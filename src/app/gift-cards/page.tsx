@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Gift, Mail, Calendar, Sparkles, Heart, Zap, ShieldCheck, InfinityIcon } from "lucide-react";
+import { Gift, Mail, Calendar, Sparkles, Zap, ShieldCheck, InfinityIcon } from "lucide-react";
 import PageHeader from "@/components/page/PageHeader";
 import SectionHeading from "@/components/page/SectionHeading";
 import FAQAccordion from "@/components/page/FAQAccordion";
@@ -89,7 +89,7 @@ export default function GiftCardsPage() {
                     <p className="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.2em] text-white/70 mb-0.5 sm:mb-1">
                       Code
                     </p>
-                    <p className="font-mono text-[11px] sm:text-sm truncate">BEAU·XXXX·XXXX</p>
+                    <p className="font-mono text-[11px] sm:text-sm truncate">ELARA·XXXX·XXXX</p>
                   </div>
                 </div>
               </div>

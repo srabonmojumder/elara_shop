@@ -1,8 +1,16 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { Flame, Tag, Percent, Gift, Clock, ArrowRight, Sparkles } from "lucide-react";
 import PageHeader from "@/components/page/PageHeader";
 import SectionHeading from "@/components/page/SectionHeading";
 import CTASection from "@/components/page/CTASection";
+
+export const metadata: Metadata = {
+  title: "Offers & Promotions",
+  description:
+    "Save on the season's best — no maze of terms and conditions. Just edit-worthy deals from the brands we love. Up to 40% off.",
+};
+
 
 const heroOffers = [
   {

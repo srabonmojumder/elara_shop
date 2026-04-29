@@ -1,7 +1,15 @@
-import { Download, ExternalLink, Mail, Newspaper, Quote, Award, TrendingUp, Users } from "lucide-react";
+import type { Metadata } from "next";
+import { Download, ExternalLink, Quote, Award, TrendingUp, Users } from "lucide-react";
 import PageHeader from "@/components/page/PageHeader";
 import SectionHeading from "@/components/page/SectionHeading";
 import CTASection from "@/components/page/CTASection";
+
+export const metadata: Metadata = {
+  title: "Press & Media",
+  description:
+    "Find media assets, recent coverage, our founding story, and a direct line to our press team.",
+};
+
 
 const pressFeatures = [
   { outlet: "Vogue", headline: "The Milano-born concept store redefining quiet luxury", date: "March 2026", href: "#" },

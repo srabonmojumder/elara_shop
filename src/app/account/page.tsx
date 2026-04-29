@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
 import {
@@ -55,7 +56,7 @@ export default function AccountPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10">
       <nav className="text-xs text-text-muted mb-6 hidden sm:block">
-        <a href="/" className="hover:text-accent">Home</a>
+        <Link href="/" className="hover:text-accent">Home</Link>
         <span className="mx-2">/</span>
         <span className="text-text-primary">My Account</span>
       </nav>
@@ -121,10 +122,10 @@ export default function AccountPage() {
                   </button>
                 );
               })}
-              <a href="/login" className="w-full flex items-center gap-3 px-4 py-3.5 text-sm font-medium text-error hover:bg-error/5 transition-colors cursor-pointer">
+              <Link href="/login" className="w-full flex items-center gap-3 px-4 py-3.5 text-sm font-medium text-error hover:bg-error/5 transition-colors cursor-pointer">
                 <LogOut className="w-4 h-4" />
                 Sign Out
-              </a>
+              </Link>
             </nav>
           </div>
         </aside>
@@ -294,11 +295,11 @@ export default function AccountPage() {
             <div className="animate-fade-in-up space-y-5">
               <h2 className="text-xl font-bold">My Wishlist</h2>
               <p className="text-sm text-text-secondary">
-                Your saved items are on the <a href="/wishlist" className="text-accent font-semibold hover:underline">Wishlist page</a>. View, manage, and add items to your cart from there.
+                Your saved items are on the <Link href="/wishlist" className="text-accent font-semibold hover:underline">Wishlist page</Link>. View, manage, and add items to your cart from there.
               </p>
-              <a href="/wishlist" className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-white text-sm font-semibold uppercase tracking-wider rounded-lg hover:bg-accent-dark transition-colors">
+              <Link href="/wishlist" className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-white text-sm font-semibold uppercase tracking-wider rounded-lg hover:bg-accent-dark transition-colors">
                 Go to Wishlist <ChevronRight className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
           )}
 
