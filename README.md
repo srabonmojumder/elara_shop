@@ -114,8 +114,8 @@ All design tokens live in `src/app/globals.css` inside the `@theme` block. Chang
 ```css
 @theme {
   --color-primary: #000000;       /* Dark header / primary surfaces */
-  --color-accent: #e21a1f;        /* CTAs, highlights */
-  --color-accent-dark: #c41318;   /* Hover states */
+  --color-accent: #1c558b;        /* CTAs, highlights */
+  --color-accent-dark: #15406a;   /* Hover states */
   --color-success: #02d071;       /* Free-shipping bar, success */
   /* ...plus surface, text, and border tokens */
 }

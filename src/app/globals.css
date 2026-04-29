@@ -18,7 +18,7 @@
   --border-light: #f3f4f6;
   --border-dark: #707070;
 
-  --accent-light-val: #fff1f2;
+  --accent-light-val: #e6eef5;
   --overlay-val: rgba(0, 0, 0, 0.5);
 }
 
@@ -36,7 +36,7 @@
   --border-light: #1f1f1f;
   --border-dark: #555555;
 
-  --accent-light-val: #2a1011;
+  --accent-light-val: #0f1d2e;
   --overlay-val: rgba(0, 0, 0, 0.7);
 }
 
@@ -45,8 +45,8 @@
 
   --color-primary: #000000;
   --color-primary-light: #1a1a1a;
-  --color-accent: #e21a1f;
-  --color-accent-dark: #c41318;
+  --color-accent: #1c558b;
+  --color-accent-dark: #15406a;
   --color-accent-light: var(--accent-light-val);
 
   --color-surface: var(--surface);

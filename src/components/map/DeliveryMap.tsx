@@ -80,7 +80,7 @@ function carIcon(angleDeg: number) {
     html: `
       <div style="position:relative;width:48px;height:48px;">
         <div style="
-          position:absolute;inset:0;border-radius:9999px;background:#e21a1f;
+          position:absolute;inset:0;border-radius:9999px;background:#1c558b;
           opacity:0.22;animation:carPulse 1.6s ease-out infinite;
         "></div>
         <div style="
@@ -90,7 +90,7 @@ function carIcon(angleDeg: number) {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="22" height="22" viewBox="0 0 24 24"
-            fill="none" stroke="#e21a1f" stroke-width="2"
+            fill="none" stroke="#1c558b" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round"
             style="transform:rotate(${angleDeg}deg);transition:transform .2s linear;"
           >
@@ -291,7 +291,7 @@ export default function DeliveryMap({ progress }: DeliveryMapProps) {
       <Polyline
         positions={ROUTE}
         pathOptions={{
-          color: "#e21a1f",
+          color: "#1c558b",
           opacity: 0.18,
           weight: 8,
           lineCap: "round",
@@ -303,7 +303,7 @@ export default function DeliveryMap({ progress }: DeliveryMapProps) {
       <Polyline
         positions={remaining}
         pathOptions={{
-          color: "#e21a1f",
+          color: "#1c558b",
           opacity: 0.55,
           weight: 4,
           dashArray: "2 10",
@@ -315,7 +315,7 @@ export default function DeliveryMap({ progress }: DeliveryMapProps) {
       <Polyline
         positions={travelled}
         pathOptions={{
-          color: "#e21a1f",
+          color: "#1c558b",
           opacity: 1,
           weight: 5,
           lineCap: "round",
@@ -324,7 +324,7 @@ export default function DeliveryMap({ progress }: DeliveryMapProps) {
       />
 
       <Marker position={PICKUP} icon={pinIcon("#111111", "P", "P")} />
-      <Marker position={DROPOFF} icon={pinIcon("#e21a1f", "H", "H")} />
+      <Marker position={DROPOFF} icon={pinIcon("#1c558b", "H", "H")} />
       <Marker position={carPos} icon={carIcon(angle)} />
     </MapContainer>
   );
