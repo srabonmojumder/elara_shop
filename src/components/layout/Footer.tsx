@@ -63,7 +63,7 @@ const footerSections = [
     title: "Community",
     links: [
       { label: "Blog", href: "/blog" },
-      { label: "Beauty Tips", href: "/blog/beauty-tips" },
+      { label: "Style Notes", href: "/blog/beauty-tips" },
       { label: "Brand Directory", href: "/brands" },
       { label: "Store Locator", href: "/stores" },
     ],

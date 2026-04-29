@@ -36,7 +36,7 @@ const steps = [
 ];
 
 const benefits = [
-  { icon: TrendingUp, title: "Industry-leading rates", description: "Up to 20% commission — higher than most beauty programs." },
+  { icon: TrendingUp, title: "Industry-leading rates", description: "Up to 20% commission — higher than most fashion programs." },
   { icon: BarChart3, title: "Real-time analytics", description: "Live dashboard with clicks, conversions, and earnings breakdown." },
   { icon: Gift, title: "Product seeding", description: "Receive new launches before anyone else — free of charge." },
   { icon: ShieldCheck, title: "30-day attribution", description: "Generous cookie window means you get credit for the long decision curve." },
@@ -55,8 +55,8 @@ export default function AffiliatesPage() {
     <div>
       <PageHeader
         eyebrow="Affiliate program"
-        title="Share the beauty. Earn the rewards."
-        description="Turn your love of beauty into a stream of income. Up to 20% commission, real-time analytics, and a partnership team that actually picks up the phone."
+        title="Share the style. Earn the rewards."
+        description="Turn your love of style into a stream of income. Up to 20% commission, real-time analytics, and a partnership team that actually picks up the phone."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Affiliate Program" }]}
         variant="hero"
       />

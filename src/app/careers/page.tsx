@@ -38,7 +38,7 @@ const principles = [
 ];
 
 const teams = [
-  { icon: ShoppingBag, title: "Retail & Store Operations", description: "Beauty advisors, store leads, and flagship experience teams across Milano, Paris, and London." },
+  { icon: ShoppingBag, title: "Retail & Store Operations", description: "Stylists, store leads, and flagship experience teams across Milano, Paris, and London." },
   { icon: Palette, title: "Creative & Merchandising", description: "Editors, stylists, buyers, and content producers shaping the Elara Shop point of view." },
   { icon: Briefcase, title: "Product, Engineering & Data", description: "Designers and engineers building elarashop.com, our apps, and internal tools." },
   { icon: Globe2, title: "Operations & Supply Chain", description: "Logistics, fulfilment, customer care, and the people who make same-day dispatch possible." },
@@ -59,15 +59,15 @@ const testimonials = [
     initials: "AC",
   },
   {
-    quote: "The retail team treats beauty like craft. Every advisor is trained for two full weeks — that's unheard of in this industry.",
+    quote: "The retail team treats fashion like craft. Every stylist is trained for two full weeks — that's unheard of in this industry.",
     name: "Marcus Lindqvist",
     role: "Store Lead, London · 3 yrs at Elara Shop",
     initials: "ML",
   },
   {
-    quote: "I joined as a junior buyer and now lead skincare for EU. The learning budget wasn't a perk — it was genuinely life-changing.",
+    quote: "I joined as a junior buyer and now lead womenswear for EU. The learning budget wasn't a perk — it was genuinely life-changing.",
     name: "Priya Shah",
-    role: "Skincare Buyer · 4 yrs at Elara Shop",
+    role: "Womenswear Buyer · 4 yrs at Elara Shop",
     initials: "PS",
   },
 ];
@@ -77,8 +77,8 @@ export default function CareersPage() {
     <div>
       <PageHeader
         eyebrow="Careers"
-        title="Build the future of beauty with us"
-        description="We're 140 people across Milano, Paris, and London — building the home of beauty online. Pick up a brush, or a keyboard, and let's make something great."
+        title="Build the future of fashion with us"
+        description="We're 140 people across Milano, Paris, and London — building the home of premium fashion online. Pick up a needle, or a keyboard, and let's make something great."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Careers" }]}
         variant="hero"
       />

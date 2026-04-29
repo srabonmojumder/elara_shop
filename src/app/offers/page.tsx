@@ -6,8 +6,8 @@ import CTASection from "@/components/page/CTASection";
 
 const heroOffers = [
   {
-    title: "Spring Beauty Edit",
-    subtitle: "Up to 40% off the season's most-wanted",
+    title: "The Spring Edit",
+    subtitle: "Up to 40% off the season's most-wanted pieces",
     badge: "Limited time",
     cta: "Shop the edit",
     href: "/products?promo=spring",
@@ -25,10 +25,10 @@ const heroOffers = [
 ];
 
 const offerGrid = [
-  { category: "Skincare", discount: "30%", title: "Clean beauty heroes", items: "68 products", href: "/products?category=skincare", image: "/images/categories/skincare.jpg" },
-  { category: "Makeup", discount: "25%", title: "Lip & complexion edit", items: "52 products", href: "/products?category=makeup", image: "/images/categories/makeup.jpg" },
-  { category: "Fragrance", discount: "20%", title: "Signature scents", items: "34 products", href: "/products?category=perfumes-women", image: "/images/categories/perfumes-women.jpg" },
-  { category: "Haircare", discount: "35%", title: "Salon-grade formulas", items: "41 products", href: "/products?category=haircare", image: "/images/categories/haircare.jpg" },
+  { category: "Women", discount: "30%", title: "Tailoring & knits", items: "68 pieces", href: "/products?category=women", image: "/images/categories/women.jpg" },
+  { category: "Men", discount: "25%", title: "Linen & layering", items: "52 pieces", href: "/products?category=men", image: "/images/categories/men.jpg" },
+  { category: "Footwear", discount: "20%", title: "Heritage & modern", items: "34 pieces", href: "/products?category=footwear", image: "/images/categories/footwear.jpg" },
+  { category: "Bags", discount: "35%", title: "Leather goods edit", items: "41 pieces", href: "/products?category=bags", image: "/images/categories/bags.jpg" },
 ];
 
 const codes = [
@@ -40,7 +40,7 @@ const codes = [
   },
   {
     code: "FRESH25",
-    description: "25% off your first skincare purchase",
+    description: "25% off your first order",
     expires: "Ongoing",
     highlight: false,
   },
@@ -53,9 +53,9 @@ const codes = [
 ];
 
 const perks = [
-  { icon: Gift, title: "Welcome gift", description: "20% off + free sample set with your first order" },
-  { icon: Sparkles, title: "Early access", description: "Shop new launches 48 hours before anyone else" },
-  { icon: Tag, title: "Birthday treat", description: "Free full-size product every year on your birthday" },
+  { icon: Gift, title: "Welcome gift", description: "20% off + free leather card holder with your first order" },
+  { icon: Sparkles, title: "Early access", description: "Shop new arrivals 48 hours before anyone else" },
+  { icon: Tag, title: "Birthday treat", description: "A handpicked piece on us, every year on your birthday" },
   { icon: Percent, title: "Member pricing", description: "Exclusive loyalty tier discounts stacked with any promo" },
 ];
 
@@ -64,7 +64,7 @@ export default function OffersPage() {
     <div>
       <PageHeader
         eyebrow="Offers & promotions"
-        title="Beauty deals, handpicked"
+        title="Edit-worthy deals, handpicked"
         description="Save on the season's best — no maze of terms and conditions, no sneaky exclusions. Just real offers from the brands we love."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Offers" }]}
         variant="hero"

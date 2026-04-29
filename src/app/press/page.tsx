@@ -4,12 +4,12 @@ import SectionHeading from "@/components/page/SectionHeading";
 import CTASection from "@/components/page/CTASection";
 
 const pressFeatures = [
-  { outlet: "Vogue", headline: "The Milano-born beauty shop redefining curation", date: "March 2026", href: "#" },
+  { outlet: "Vogue", headline: "The Milano-born concept store redefining quiet luxury", date: "March 2026", href: "#" },
   { outlet: "Harper's BAZAAR", headline: "How Elara Shop became every editor's most-opened tab", date: "January 2026", href: "#" },
   { outlet: "ELLE", headline: "Inside the new flagship on Montenapoleone", date: "November 2025", href: "#" },
   { outlet: "Business of Fashion", headline: "Giulia & Martina Romano on building a category-defining brand", date: "September 2025", href: "#" },
   { outlet: "Financial Times", headline: "Elara Shop raises Series B at €240M valuation", date: "June 2025", href: "#" },
-  { outlet: "Wallpaper*", headline: "A beauty store designed like a gallery", date: "April 2025", href: "#" },
+  { outlet: "Wallpaper*", headline: "A fashion store designed like a gallery", date: "April 2025", href: "#" },
 ];
 
 const assets = [
@@ -20,8 +20,8 @@ const assets = [
 ];
 
 const awards = [
-  { year: "2026", title: "Retailer of the Year", body: "Global Beauty Awards" },
-  { year: "2025", title: "Fastest-Growing EU Beauty Platform", body: "The Drum Awards" },
+  { year: "2026", title: "Retailer of the Year", body: "Global Fashion Awards" },
+  { year: "2025", title: "Fastest-Growing EU Fashion Platform", body: "The Drum Awards" },
   { year: "2024", title: "B Corp Certification", body: "B Lab" },
   { year: "2024", title: "Best Digital Experience", body: "Webby Awards" },
 ];
@@ -134,11 +134,11 @@ export default function PressPage() {
             <div className="relative bg-primary text-white rounded-2xl p-8 md:p-12">
               <Quote className="w-10 h-10 text-accent mb-5" />
               <p className="text-lg md:text-xl font-medium leading-relaxed mb-6">
-                Elara Shop is what happens when beauty is edited by people who actually love it. Every visit feels like a recommendation from your smartest friend.
+                Elara Shop is what happens when fashion is edited by people who actually love it. Every visit feels like a recommendation from your smartest friend.
               </p>
               <div className="pt-5 border-t border-white/15">
                 <p className="text-sm font-bold">Elena Verdini</p>
-                <p className="text-xs text-white/70 mt-0.5">Beauty Editor, Vogue Italia</p>
+                <p className="text-xs text-white/70 mt-0.5">Fashion Editor, Vogue Italia</p>
               </div>
             </div>
 

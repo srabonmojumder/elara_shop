@@ -37,17 +37,17 @@ const steps = [
 ];
 
 const eligibilityOK = [
-  "Unused and unopened items in original packaging",
-  "Gently tested products with seals intact",
-  "Fragrances and sets in full unopened condition",
+  "Unworn items with all original tags attached",
+  "Items in original packaging and condition",
+  "Footwear with the dust bag and box, unworn outdoors",
   "Wrong item received or item arrived damaged",
 ];
 
 const eligibilityNotOK = [
   "Items marked 'final sale' on the product page",
-  "Opened skincare, lip, or eye products (hygiene)",
-  "Gift cards and downloadable vouchers",
-  "Personalized or engraved products",
+  "Worn or laundered clothing (hygiene)",
+  "Pierced jewelry (earrings) once removed from sealed packaging",
+  "Gift cards, downloadable vouchers, and personalized items",
 ];
 
 const faqs = [

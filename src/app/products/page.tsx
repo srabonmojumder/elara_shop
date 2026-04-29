@@ -14,7 +14,7 @@ import {
 const allProducts = [...flashOffers, ...newArrivals, ...bestSellers];
 
 const brands = [...new Set(allProducts.map((p) => p.brand))].sort();
-const categories = ["All", "Skincare", "Makeup", "Fragrance", "Hair Care", "Body Care", "Tools"];
+const categories = ["All", "Women", "Men", "Footwear", "Bags", "Jewelry", "Home"];
 const priceRanges = [
   { label: "All Prices", min: 0, max: Infinity },
   { label: "Under 10 €", min: 0, max: 10 },

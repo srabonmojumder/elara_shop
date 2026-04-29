@@ -334,7 +334,7 @@ export default function AccountPage() {
                   {[
                     { key: "orders" as const, label: "Order Updates", desc: "Shipping, delivery, and return notifications" },
                     { key: "promos" as const, label: "Promotions", desc: "Sales, discounts, and special offers" },
-                    { key: "newsletter" as const, label: "Newsletter", desc: "Weekly beauty tips and new arrivals" },
+                    { key: "newsletter" as const, label: "Newsletter", desc: "Weekly style notes and new arrivals" },
                   ].map((n) => (
                     <div key={n.key} className="flex items-center justify-between">
                       <div>

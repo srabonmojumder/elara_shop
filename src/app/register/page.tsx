@@ -192,7 +192,7 @@ export default function RegisterPage() {
           <div className="space-y-3 pt-1">
             <label className="flex items-start gap-2.5 cursor-pointer">
               <input type="checkbox" checked={form.newsletter} onChange={(e) => update("newsletter", e.target.checked)} className="w-4 h-4 rounded border-border text-accent focus:ring-accent mt-0.5" />
-              <span className="text-sm text-text-secondary">Send me exclusive offers, new arrivals, and beauty tips</span>
+              <span className="text-sm text-text-secondary">Send me exclusive offers, new arrivals, and style notes</span>
             </label>
             <label className="flex items-start gap-2.5 cursor-pointer">
               <input type="checkbox" checked={form.terms} onChange={(e) => update("terms", e.target.checked)} className="w-4 h-4 rounded border-border text-accent focus:ring-accent mt-0.5" />

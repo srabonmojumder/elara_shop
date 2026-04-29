@@ -113,7 +113,7 @@ export default function AccessibilityPage() {
       lastUpdated="April 1, 2026"
       intro={
         <p>
-          Beauty is for everyone — so Elara Shop should be too. This statement explains how we approach accessibility, what we've built, what we haven't yet, and how to reach us if something doesn't work for you.
+          Style is for everyone — so Elara Shop should be too. This statement explains how we approach accessibility, what we've built, what we haven't yet, and how to reach us if something doesn't work for you.
         </p>
       }
       sections={sections}

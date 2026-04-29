@@ -6,29 +6,29 @@ import { Clock, Search, ArrowRight, TrendingUp } from "lucide-react";
 import PageHeader from "@/components/page/PageHeader";
 import SectionHeading from "@/components/page/SectionHeading";
 
-const categories = ["All", "Skincare", "Makeup", "Haircare", "Fragrance", "Wellness", "Interviews"];
+const categories = ["All", "Style", "Trends", "Craft", "Sustainability", "Lifestyle", "Interviews"];
 
 const featured = {
-  category: "Skincare",
-  title: "The science behind your 3-step routine — and why order actually matters",
-  excerpt: "A dermatologist explains why skincare order isn't marketing — it's chemistry. Get the actual reasons your serum should come before moisturizer.",
-  author: "Dr. Elena Moretti",
+  category: "Style",
+  title: "Building a capsule wardrobe — and why fewer pieces actually means more outfits",
+  excerpt: "A stylist explains why capsule dressing isn't marketing — it's mathematics. Twelve well-chosen pieces, ninety distinct looks. Here's the framework.",
+  author: "Sofia Esposito",
   date: "April 14, 2026",
   readTime: "7 min",
-  image: "/images/categories/skincare.jpg",
+  image: "/images/categories/women.jpg",
   href: "/blog/beauty-tips",
 };
 
 const posts = [
-  { category: "Makeup", title: "10 runway-inspired looks you can wear on a Tuesday", excerpt: "Off-runway, everyday-ready. Our editors break down the season's most wearable trends.", author: "Sofia Esposito", date: "April 12, 2026", readTime: "6 min", image: "/images/categories/makeup.jpg" },
-  { category: "Haircare", title: "Why bond repair is the only haircare trend worth believing in", excerpt: "The science, the products, and the honest reviews — from someone with bleach-damaged hair.", author: "Giulia Romano", date: "April 8, 2026", readTime: "9 min", image: "/images/categories/haircare.jpg" },
-  { category: "Fragrance", title: "How to shop for a signature scent without buying 20 bottles first", excerpt: "A step-by-step method we use in-store, written down so you can do it yourself.", author: "Martina Romano", date: "April 5, 2026", readTime: "5 min", image: "/images/categories/perfumes-women.jpg" },
-  { category: "Wellness", title: "Your skin barrier is angry. Here's what's actually happening.", excerpt: "Breakouts, redness, dullness — chances are your skin barrier is shouting. Our estheticians walk through the fix.", author: "Dr. Lucia Ferri", date: "April 2, 2026", readTime: "8 min", image: "/images/hero/hero-2.jpg" },
-  { category: "Makeup", title: "The 5-product makeup bag: what to pack when you can only bring five things", excerpt: "Trip, wedding, weekend away — the editor's capsule that handles them all.", author: "Sofia Esposito", date: "March 29, 2026", readTime: "4 min", image: "/images/hero/hero-3.jpg" },
-  { category: "Interviews", title: "In the studio with Giulia Romano — on building Elara Shop from a 30m² shop", excerpt: "A candid conversation about the early years, the mistakes, and what's next.", author: "Editorial Team", date: "March 25, 2026", readTime: "12 min", image: "/images/hero/hero-4.jpg" },
-  { category: "Skincare", title: "Retinol for beginners: everything you need, nothing you don't", excerpt: "Start here before you buy anything. A gentle, actually-useful guide to retinol.", author: "Dr. Elena Moretti", date: "March 21, 2026", readTime: "10 min", image: "/images/hero/hero-1.jpg" },
-  { category: "Haircare", title: "How often should you actually wash your hair? (It depends.)", excerpt: "Plus: why the \"training your hair\" trend is mostly a myth.", author: "Giulia Romano", date: "March 18, 2026", readTime: "6 min", image: "/images/categories/haircare.jpg" },
-  { category: "Wellness", title: "Sleep is the cheapest anti-aging tool — here's the research", excerpt: "Why 7 hours beats any serum, and what to do when you can't get it.", author: "Dr. Lucia Ferri", date: "March 14, 2026", readTime: "7 min", image: "/images/categories/body.jpg" },
+  { category: "Trends", title: "10 runway looks you can actually wear on a Tuesday", excerpt: "Off-runway, everyday-ready. Our editors break down the season's most wearable trends.", author: "Sofia Esposito", date: "April 12, 2026", readTime: "6 min", image: "/images/categories/men.jpg" },
+  { category: "Craft", title: "Why hand-stitched leather still beats anything machine-made", excerpt: "Inside Linea's Tuscan workshop — and why their loafers cost what they do.", author: "Giulia Romano", date: "April 8, 2026", readTime: "9 min", image: "/images/categories/footwear.jpg" },
+  { category: "Style", title: "How to find a signature look without buying twenty pieces first", excerpt: "A step-by-step method our stylists use in-store, written down so you can do it yourself.", author: "Martina Romano", date: "April 5, 2026", readTime: "5 min", image: "/images/categories/women.jpg" },
+  { category: "Sustainability", title: "What 'made in Portugal' actually means — and why it matters", excerpt: "We visited Verda's Porto workshop. Here's what fair-labour, low-waste production looks like in practice.", author: "Luca Moretti", date: "April 2, 2026", readTime: "8 min", image: "/images/hero/hero-2.jpg" },
+  { category: "Trends", title: "The 5-piece travel capsule: dressing well with only five things in the bag", excerpt: "Trip, wedding, weekend away — the editor's capsule that handles them all.", author: "Sofia Esposito", date: "March 29, 2026", readTime: "4 min", image: "/images/hero/hero-3.jpg" },
+  { category: "Interviews", title: "In the studio with Giulia Romano — on building Elara Shop from a 30m² boutique", excerpt: "A candid conversation about the early years, the mistakes, and what's next.", author: "Editorial Team", date: "March 25, 2026", readTime: "12 min", image: "/images/hero/hero-4.jpg" },
+  { category: "Style", title: "Tailoring for beginners: the 6 rules that actually matter", excerpt: "Start here before you buy your next blazer. A practical, no-nonsense guide to fit.", author: "Marcus Lindqvist", date: "March 21, 2026", readTime: "10 min", image: "/images/hero/hero-1.jpg" },
+  { category: "Craft", title: "How to spot quality leather (and the marketing tricks to ignore)", excerpt: "Plus: why grain matters more than country of origin.", author: "Giulia Romano", date: "March 18, 2026", readTime: "6 min", image: "/images/categories/bags.jpg" },
+  { category: "Lifestyle", title: "Investment dressing: why one €600 piece beats six €100 ones", excerpt: "The cost-per-wear math that quietly redefined how our editors shop.", author: "Sofia Esposito", date: "March 14, 2026", readTime: "7 min", image: "/images/categories/jewelry.jpg" },
 ];
 
 export default function BlogPage() {
@@ -50,8 +50,8 @@ export default function BlogPage() {
     <div>
       <PageHeader
         eyebrow="The Edit"
-        title="Beauty writing worth reading"
-        description="Interviews, how-tos, deep-dives, and the occasional hot take — written by our editors, dermatologists, and the people behind the brands we love."
+        title="Style writing worth reading"
+        description="Interviews, how-tos, deep-dives, and the occasional hot take — written by our editors, stylists, and the people behind the brands we love."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Blog" }]}
         variant="hero"
       />

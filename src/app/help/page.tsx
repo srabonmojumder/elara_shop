@@ -56,8 +56,8 @@ const faqs = [
     a: "You have 30 days from delivery. Start a return from your account page, print the prepaid label, and drop the package at any partner location. Refunds land in 5–7 business days after we receive the return.",
   },
   {
-    q: "Are your products cruelty-free?",
-    a: "All Elara Shop products are certified cruelty-free by Leaping Bunny, and 92% of our range is vegan. We're actively working to reach 100% by 2027.",
+    q: "Are your products ethically made?",
+    a: "All Elara Shop products are certified ethically made by Fair Trade, and 92% of our range is vegan. We're actively working to reach 100% by 2027.",
   },
   {
     q: "Can I use multiple discount codes?",

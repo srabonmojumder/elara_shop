@@ -15,35 +15,38 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Elara Shop — Premium Beauty, Skincare & Fragrance",
+    default: "Elara Shop — Premium Fashion, Footwear & Lifestyle",
     template: "%s — Elara Shop",
   },
   description:
-    "Elara Shop is a premium beauty, skincare, makeup, and fragrance destination. Discover the world's most coveted brands with free shipping on orders over €49.",
+    "Elara Shop is a premium fashion, footwear, accessories, and home destination. Discover quietly luxurious brands with free shipping on orders over €49.",
   applicationName: "Elara Shop",
   keywords: [
     "Elara Shop",
-    "beauty",
-    "skincare",
-    "makeup",
-    "fragrance",
+    "fashion",
+    "clothing",
+    "footwear",
+    "bags",
+    "accessories",
+    "jewelry",
+    "lifestyle",
     "ecommerce",
     "online shop",
   ],
   authors: [{ name: "Elara Shop" }],
   creator: "Elara Shop",
   openGraph: {
-    title: "Elara Shop — Premium Beauty, Skincare & Fragrance",
+    title: "Elara Shop — Premium Fashion, Footwear & Lifestyle",
     description:
-      "Discover premium beauty, skincare, makeup, and fragrances. Free shipping on orders over €49.",
+      "Discover premium fashion, footwear, accessories, and home goods. Free shipping on orders over €49.",
     siteName: "Elara Shop",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Elara Shop — Premium Beauty, Skincare & Fragrance",
+    title: "Elara Shop — Premium Fashion, Footwear & Lifestyle",
     description:
-      "Discover premium beauty, skincare, makeup, and fragrances. Free shipping on orders over €49.",
+      "Discover premium fashion, footwear, accessories, and home goods. Free shipping on orders over €49.",
   },
   robots: { index: true, follow: true },
 };

@@ -31,7 +31,7 @@ export default function StudentPage() {
     <div>
       <PageHeader
         eyebrow="Student discount"
-        title="Real beauty. Student prices."
+        title="Real style. Student prices."
         description="15% off every order, exclusive launches, and a free sample bundle — because self-care shouldn't be a splurge you regret."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Student Discount" }]}
         variant="hero"
@@ -67,7 +67,7 @@ export default function StudentPage() {
             <div className="hidden md:block">
               <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/categories/makeup.jpg"
+                  src="/images/categories/women.jpg"
                   alt=""
                   fill
                   sizes="400px"

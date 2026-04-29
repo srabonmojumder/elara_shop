@@ -54,7 +54,7 @@ export default function SearchBar() {
           <div className="p-4">
             <p className="text-sm text-text-secondary">Popular searches:</p>
             <div className="flex flex-wrap gap-2 mt-3">
-              {["Skincare", "Retinol", "SPF", "Foundation", "Lip Gloss"].map(
+              {["Linen", "Cashmere", "Loafers", "Tote Bag", "Gold Hoops"].map(
                 (term) => (
                   <span
                     key={term}

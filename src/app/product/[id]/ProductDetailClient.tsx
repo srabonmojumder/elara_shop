@@ -48,7 +48,7 @@ export default function ProductDetailClient({
 }: ProductDetailClientProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [quantity, setQuantity] = useState(1);
-  const [activeTab, setActiveTab] = useState<"description" | "ingredients" | "reviews">("description");
+  const [activeTab, setActiveTab] = useState<"description" | "materials" | "reviews">("description");
   const swiperRef = useRef<SwiperType | null>(null);
 
   // Hover zoom state (desktop)
@@ -246,9 +246,9 @@ export default function ProductDetailClient({
               <div className="h-px bg-border mb-5" />
 
               <p className="text-xs sm:text-sm text-text-secondary leading-relaxed mb-6">
-                Discover the luxurious formula of {product.brand}&apos;s {product.name}.
-                This premium product is crafted with the finest ingredients to deliver
-                visible results. Suitable for all skin types.
+                Discover the considered craft of {product.brand}&apos;s {product.name}.
+                Cut from premium materials and finished with care, this piece is built
+                to wear well, season after season.
               </p>
 
               <div className="flex items-stretch gap-2 sm:gap-3 mb-4">
@@ -298,47 +298,53 @@ export default function ProductDetailClient({
         {/* ── Tabs ── */}
         <div className="mt-8 sm:mt-12 md:mt-16">
           <div className="flex border-b border-border overflow-x-auto scrollbar-none -mx-4 px-4 sm:mx-0 sm:px-0">
-            {(["description", "ingredients", "reviews"] as const).map((tab) => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                className={`px-4 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm font-semibold uppercase tracking-wider transition-colors cursor-pointer border-b-2 -mb-px whitespace-nowrap ${
-                  activeTab === tab ? "border-accent text-accent" : "border-transparent text-text-secondary hover:text-text-primary"
-                }`}
-              >
-                {tab === "reviews"
+            {(["description", "materials", "reviews"] as const).map((tab) => {
+              const label =
+                tab === "reviews"
                   ? `Reviews (${product.reviewCount >= 1000 ? `${(product.reviewCount / 1000).toFixed(1)}k` : product.reviewCount})`
-                  : tab.charAt(0).toUpperCase() + tab.slice(1)}
-              </button>
-            ))}
+                  : tab === "materials"
+                  ? "Materials & Care"
+                  : "Description";
+              return (
+                <button
+                  key={tab}
+                  onClick={() => setActiveTab(tab)}
+                  className={`px-4 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm font-semibold uppercase tracking-wider transition-colors cursor-pointer border-b-2 -mb-px whitespace-nowrap ${
+                    activeTab === tab ? "border-accent text-accent" : "border-transparent text-text-secondary hover:text-text-primary"
+                  }`}
+                >
+                  {label}
+                </button>
+              );
+            })}
           </div>
 
           <div className="py-6 sm:py-8">
             {activeTab === "description" && (
               <div className="max-w-3xl text-xs sm:text-sm text-text-secondary leading-relaxed space-y-3 sm:space-y-4 animate-fade-in-up">
-                <p>Introducing {product.name} by {product.brand} — a premium formulation designed to elevate your beauty routine. This carefully crafted product combines cutting-edge technology with the finest ingredients for visible, long-lasting results.</p>
-                <p>Perfect for daily use, this product delivers exceptional performance while being gentle on your skin. Its lightweight texture absorbs quickly, leaving no residue — just a beautiful, radiant finish.</p>
-                <h3 className="text-sm sm:text-base font-bold text-text-primary !mt-5 sm:!mt-6">How to Use</h3>
-                <p>Apply a small amount to clean skin, morning and evening. Gently massage in upward circular motions until fully absorbed.</p>
+                <p>Introducing {product.name} by {product.brand} — a piece designed to slip seamlessly into the wardrobe you already love. Cut, sewn, and finished by hand, every detail has been considered to feel as good as it looks.</p>
+                <p>Worn solo or layered, the silhouette is clean and forgiving — built to flatter without trying too hard. The kind of piece you reach for again and again.</p>
+                <h3 className="text-sm sm:text-base font-bold text-text-primary !mt-5 sm:!mt-6">Fit &amp; Sizing</h3>
+                <p>True to size with a relaxed, easy fit. If you&apos;re between sizes, we recommend sizing down for a closer fit or up for a more oversized silhouette. Model is 5&apos;9&quot; / 175cm and wears size S.</p>
               </div>
             )}
-            {activeTab === "ingredients" && (
+            {activeTab === "materials" && (
               <div className="max-w-3xl text-xs sm:text-sm text-text-secondary leading-relaxed animate-fade-in-up">
-                <p className="mb-3 sm:mb-4">We believe in transparency. Here are the key active ingredients:</p>
+                <p className="mb-3 sm:mb-4">Considered craft, considered materials. Here&apos;s what&apos;s inside:</p>
                 <ul className="space-y-2 sm:space-y-2.5">
                   {[
-                    { name: "Hyaluronic Acid", desc: "Deep hydration and plumping" },
-                    { name: "Vitamin E", desc: "Antioxidant protection" },
-                    { name: "Niacinamide", desc: "Pore refinement and brightening" },
-                    { name: "Squalane", desc: "Lightweight moisture barrier" },
-                  ].map((ing) => (
-                    <li key={ing.name} className="flex items-start gap-2 sm:gap-2.5">
+                    { name: "Premium Materials", desc: "Sourced from accredited mills in Italy and Portugal" },
+                    { name: "Hand-Finished", desc: "Final detailing by skilled artisans" },
+                    { name: "OEKO-TEX Certified", desc: "Tested for harmful substances at every stage" },
+                    { name: "Care Instructions", desc: "Cool gentle wash or dry clean — see garment label" },
+                  ].map((item) => (
+                    <li key={item.name} className="flex items-start gap-2 sm:gap-2.5">
                       <Check className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-success shrink-0 mt-0.5" />
-                      <span><strong className="text-text-primary">{ing.name}</strong> — {ing.desc}</span>
+                      <span><strong className="text-text-primary">{item.name}</strong> — {item.desc}</span>
                     </li>
                   ))}
                 </ul>
-                <p className="mt-4 sm:mt-5 text-[10px] sm:text-xs text-text-muted">Free from parabens, sulfates, and artificial fragrances. Dermatologically tested.</p>
+                <p className="mt-4 sm:mt-5 text-[10px] sm:text-xs text-text-muted">Made under fair-labor standards. Packaging is 100% recyclable. Designed to last well beyond the season.</p>
               </div>
             )}
             {activeTab === "reviews" && (
@@ -370,9 +376,9 @@ export default function ProductDetailClient({
                   </div>
                 </div>
                 {[
-                  { name: "Sophie L.", date: "2 days ago", rating: 5, text: "Absolutely love this product! My skin has never felt so smooth and hydrated. Worth every penny." },
-                  { name: "Maria G.", date: "1 week ago", rating: 4, text: "Great product overall. The texture is lovely and it absorbs quickly. Would repurchase." },
-                  { name: "Emma R.", date: "2 weeks ago", rating: 5, text: "This is my third repurchase. It has become a staple in my routine. The results are consistently impressive." },
+                  { name: "Sophie L.", date: "2 days ago", rating: 5, text: "Beautifully made — the fabric is even nicer than the photos suggest. Fits exactly as described and I've been wearing it on repeat." },
+                  { name: "Maria G.", date: "1 week ago", rating: 4, text: "Great quality and lovely cut. Took one star off only because the colour reads slightly warmer in person. Still happy I bought it." },
+                  { name: "Emma R.", date: "2 weeks ago", rating: 5, text: "My third purchase from Elara Shop and they keep getting it right. Quietly luxurious without trying too hard." },
                 ].map((review, i) => (
                   <div key={i} className="py-4 sm:py-5 border-b border-border-light last:border-none">
                     <div className="flex items-center justify-between mb-2">

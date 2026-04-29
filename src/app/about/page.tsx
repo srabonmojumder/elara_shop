@@ -24,14 +24,14 @@ const stats = [
 const values = [
   { icon: Heart, title: "Obsessed with quality", description: "Every product we carry is tested by our editors and trusted by pros. If it's not worth your shelf, it's not on ours." },
   { icon: Leaf, title: "Clean & conscious", description: "We favor transparent ingredients, recyclable packaging, and partners who treat the planet like it's borrowed." },
-  { icon: Users, title: "Built with experts", description: "Dermatologists, makeup artists, and trichologists guide what makes the cut — not algorithms." },
-  { icon: Globe, title: "Inclusive by default", description: "50+ shade ranges. Zero gendered categories. Beauty that reflects every person who walks through our doors." },
+  { icon: Users, title: "Built with experts", description: "Master tailors, stylists, and product specialists guide what makes the cut — not algorithms." },
+  { icon: Globe, title: "Inclusive by default", description: "Extended size ranges. Genderless silhouettes. Style that reflects every person who walks through our doors." },
 ];
 
 const milestones = [
   { year: "2018", title: "Founded in Milano", description: "Two sisters opened a 30m² concept store on Via Brera with 40 indie brands." },
   { year: "2020", title: "Went digital", description: "Launched elarashop.com during the pandemic — shipped to 12 countries in year one." },
-  { year: "2022", title: "First flagship", description: "Opened our flagship on Via Montenapoleone with an in-store skin-analysis lab." },
+  { year: "2022", title: "First flagship", description: "Opened our flagship on Via Montenapoleone with an in-store tailoring atelier." },
   { year: "2024", title: "B Corp certified", description: "Joined the global movement redefining success in business." },
   { year: "2026", title: "You, here", description: "2.4M customers, 350+ brands, and just getting started." },
 ];
@@ -39,7 +39,7 @@ const milestones = [
 const commitments = [
   { icon: Leaf, title: "Carbon neutral", description: "Every order. Every shipment. Offset through verified forest partners." },
   { icon: Recycle, title: "100% recyclable packaging", description: "No plastic fillers, ever. Recyclable or compostable end-to-end." },
-  { icon: ShieldCheck, title: "Leaping Bunny certified", description: "Cruelty-free across every brand we carry, no exceptions." },
+  { icon: ShieldCheck, title: "Fair Trade certified", description: "Ethically made across every brand we carry, no exceptions." },
   { icon: Award, title: "B Corp certified", description: "Meeting the highest standards of verified social & environmental performance." },
 ];
 
@@ -55,8 +55,8 @@ export default function AboutPage() {
     <div>
       <PageHeader
         eyebrow="About Elara Shop"
-        title="Beauty that feels like home"
-        description="We started in a 30m² Milano concept store and grew into Europe's most-loved beauty destination — without losing the handpicked, human feel that started it all."
+        title="Style that feels like home"
+        description="We started in a 30m² Milano concept store and grew into Europe's most-loved fashion destination — without losing the handpicked, human feel that started it all."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "About Us" }]}
         variant="hero"
       />
@@ -97,14 +97,14 @@ export default function AboutPage() {
             <SectionHeading
               eyebrow="Our story"
               title="It started with two sisters and a vision"
-              description="In 2018, Giulia and Martina Romano opened Elara Shop because they couldn't find a place that treated beauty the way they did — as craft, ritual, and personal expression."
+              description="In 2018, Giulia and Martina Romano opened Elara Shop because they couldn't find a place that treated fashion the way they did — as craft, ritual, and personal expression."
             />
             <div className="mt-5 space-y-4 text-sm text-text-secondary leading-relaxed">
               <p>
                 Eight years later, we're a team of 140 obsessive editors, stylists, and technologists — but the filter is the same one the sisters started with: if it's not worth your shelf, it's not on ours.
               </p>
               <p>
-                We curate. We test. We argue about formulas. And we ship the best of what we find to 34 countries, every week.
+                We curate. We test. We argue about silhouettes. And we ship the best of what we find to 34 countries, every week.
               </p>
             </div>
           </div>
@@ -224,7 +224,7 @@ export default function AboutPage() {
       <CTASection
         eyebrow="Join the team"
         title="We're hiring across Europe"
-        description="From editors to engineers, we're looking for people who love beauty and love building things that last."
+        description="From editors to engineers, we're looking for people who love style and love building things that last."
         actions={[
           { label: "See open roles", href: "/careers", variant: "primary" },
           { label: "Press inquiries", href: "/press", variant: "outline" },

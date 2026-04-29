@@ -13,8 +13,8 @@ export function generateMetadata({ params }: { params: Promise<{ id: string }> }
     return {
       title: product ? `${product.name} — Elara Shop` : "Product — Elara Shop",
       description: product
-        ? `Shop ${product.brand} ${product.name} at Elara Shop.`
-        : "Premium beauty product.",
+        ? `Shop ${product.brand} ${product.name} at Elara Shop. Premium fashion, footwear, and lifestyle pieces.`
+        : "Premium fashion product.",
     };
   });
 }

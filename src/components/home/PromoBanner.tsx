@@ -20,11 +20,11 @@ export default function PromoBanner() {
               Limited Time Offer
             </span>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-text-primary leading-tight mb-3">
-              Up to 40% Off Premium Skincare
+              Up to 40% Off Premium Footwear
             </h2>
             <p className="text-sm text-text-secondary leading-relaxed mb-6">
-              Treat your skin to luxury. Shop our exclusive selection of
-              dermatologist-recommended products at unbeatable prices.
+              From heritage loafers to leather sneakers — shop our edit of
+              hand-finished footwear at end-of-season prices.
             </p>
             <div>
               <Button variant="accent" size="lg">

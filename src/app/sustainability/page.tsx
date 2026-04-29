@@ -52,7 +52,7 @@ export default function SustainabilityPage() {
       <PageHeader
         eyebrow="Sustainability"
         title="Beautiful things, beautifully made"
-        description="Beauty shouldn't cost the earth — literally. Here's how we're making every step of the Elara Shop journey lighter on the planet, and the people on it."
+        description="Style shouldn't cost the earth — literally. Here's how we're making every step of the Elara Shop journey lighter on the planet, and the people on it."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Sustainability" }]}
         variant="hero"
       />

@@ -19,7 +19,7 @@ export default function NewsletterStrip() {
             Join our Newsletter
           </h2>
           <p className="text-sm text-text-secondary mb-8">
-            Subscribe and get exclusive offers, new arrivals, and beauty tips
+            Subscribe and get exclusive offers, new arrivals, and style notes
             delivered to your inbox.
           </p>
 

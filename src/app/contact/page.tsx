@@ -28,7 +28,7 @@ const channels = [
   {
     icon: Phone,
     title: "Customer Care",
-    description: "Talk to a beauty advisor",
+    description: "Talk to a stylist",
     value: "+39 02 1234 5678",
     href: "tel:+390212345678",
     meta: "Mon–Fri · 9:00–19:00 CET",
