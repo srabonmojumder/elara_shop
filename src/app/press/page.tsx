@@ -5,10 +5,10 @@ import CTASection from "@/components/page/CTASection";
 
 const pressFeatures = [
   { outlet: "Vogue", headline: "The Milano-born beauty shop redefining curation", date: "March 2026", href: "#" },
-  { outlet: "Harper's BAZAAR", headline: "How BEAUTÉ became every editor's most-opened tab", date: "January 2026", href: "#" },
+  { outlet: "Harper's BAZAAR", headline: "How Elara Shop became every editor's most-opened tab", date: "January 2026", href: "#" },
   { outlet: "ELLE", headline: "Inside the new flagship on Montenapoleone", date: "November 2025", href: "#" },
   { outlet: "Business of Fashion", headline: "Giulia & Martina Romano on building a category-defining brand", date: "September 2025", href: "#" },
-  { outlet: "Financial Times", headline: "BEAUTÉ raises Series B at €240M valuation", date: "June 2025", href: "#" },
+  { outlet: "Financial Times", headline: "Elara Shop raises Series B at €240M valuation", date: "June 2025", href: "#" },
   { outlet: "Wallpaper*", headline: "A beauty store designed like a gallery", date: "April 2025", href: "#" },
 ];
 
@@ -134,7 +134,7 @@ export default function PressPage() {
             <div className="relative bg-primary text-white rounded-2xl p-8 md:p-12">
               <Quote className="w-10 h-10 text-accent mb-5" />
               <p className="text-lg md:text-xl font-medium leading-relaxed mb-6">
-                BEAUTÉ is what happens when beauty is edited by people who actually love it. Every visit feels like a recommendation from your smartest friend.
+                Elara Shop is what happens when beauty is edited by people who actually love it. Every visit feels like a recommendation from your smartest friend.
               </p>
               <div className="pt-5 border-t border-white/15">
                 <p className="text-sm font-bold">Elena Verdini</p>
@@ -170,8 +170,8 @@ export default function PressPage() {
         title="Want to talk?"
         description="Our comms team replies to all press emails within 1 business day."
         actions={[
-          { label: "press@beaute.com", href: "mailto:press@beaute.com", variant: "primary" },
-          { label: "About BEAUTÉ", href: "/about", variant: "outline" },
+          { label: "press@elarashop.com", href: "mailto:press@elarashop.com", variant: "primary" },
+          { label: "About Elara Shop", href: "/about", variant: "outline" },
         ]}
         className="pb-16 md:pb-24"
       />

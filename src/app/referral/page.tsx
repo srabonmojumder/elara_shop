@@ -19,7 +19,7 @@ import SectionHeading from "@/components/page/SectionHeading";
 import FAQAccordion from "@/components/page/FAQAccordion";
 
 const steps = [
-  { icon: Share2, title: "Share your link", description: "Send your unique referral link to a friend who hasn't shopped BEAUTÉ yet." },
+  { icon: Share2, title: "Share your link", description: "Send your unique referral link to a friend who hasn't shopped Elara Shop yet." },
   { icon: Gift, title: "They get €15 off", description: "Your friend gets €15 off their first order over €49 — instant gift at checkout." },
   { icon: Wallet, title: "You earn €15", description: "Once their order ships, €15 store credit lands in your account. No cap on referrals." },
 ];
@@ -39,7 +39,7 @@ const faqs = [
 ];
 
 export default function ReferralPage() {
-  const referralLink = "https://beaute.com/r/sarah-j-7x92km";
+  const referralLink = "https://elarashop.com/r/sarah-j-7x92km";
   const [copied, setCopied] = useState(false);
 
   const copyLink = async () => {
@@ -57,7 +57,7 @@ export default function ReferralPage() {
       <PageHeader
         eyebrow="Refer a friend"
         title="Give €15. Get €15."
-        description="Share BEAUTÉ with friends who haven't shopped with us yet — they get €15 off their first order, and we send you €15 to spend on whatever you love."
+        description="Share Elara Shop with friends who haven't shopped with us yet — they get €15 off their first order, and we send you €15 to spend on whatever you love."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Refer a Friend" }]}
         variant="hero"
       />
@@ -94,8 +94,8 @@ export default function ReferralPage() {
               Or share directly
             </p>
             <div className="flex flex-wrap gap-2">
-              <ShareButton icon={Mail} label="Email" href="mailto:?subject=Try BEAUTÉ&body=Take €15 off your first order at BEAUTÉ" />
-              <ShareButton icon={MessageCircle} label="Message" href="sms:?body=Take €15 off your first BEAUTÉ order" />
+              <ShareButton icon={Mail} label="Email" href="mailto:?subject=Try Elara Shop&body=Take €15 off your first order at Elara Shop" />
+              <ShareButton icon={MessageCircle} label="Message" href="sms:?body=Take €15 off your first Elara Shop order" />
               <ShareButton icon={Instagram} label="Instagram" />
               <ShareButton icon={Facebook} label="Facebook" />
               <ShareButton icon={Twitter} label="Twitter" />

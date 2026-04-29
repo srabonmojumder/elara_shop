@@ -12,7 +12,7 @@ import L, { LatLngExpression } from "leaflet";
 import "leaflet/dist/leaflet.css";
 
 // ─────────── Route points (Dhaka, Bangladesh) ───────────
-// From a BEAUTÉ fulfillment hub in Gulshan 2 to a customer in Dhanmondi 27.
+// From a Elara Shop fulfillment hub in Gulshan 2 to a customer in Dhanmondi 27.
 export const ROUTE: [number, number][] = [
   [23.7925, 90.4140], // Gulshan 2 circle (pickup)
   [23.7912, 90.4075],

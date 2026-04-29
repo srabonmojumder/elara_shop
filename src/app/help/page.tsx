@@ -57,7 +57,7 @@ const faqs = [
   },
   {
     q: "Are your products cruelty-free?",
-    a: "All BEAUTÉ products are certified cruelty-free by Leaping Bunny, and 92% of our range is vegan. We're actively working to reach 100% by 2027.",
+    a: "All Elara Shop products are certified cruelty-free by Leaping Bunny, and 92% of our range is vegan. We're actively working to reach 100% by 2027.",
   },
   {
     q: "Can I use multiple discount codes?",
@@ -179,7 +179,7 @@ export default function HelpPage() {
               Start a chat
             </a>
             <a
-              href="mailto:hello@beaute.com"
+              href="mailto:hello@elarashop.com"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-surface border border-border text-text-primary text-xs sm:text-sm font-semibold uppercase tracking-wider hover:border-accent hover:text-accent transition-colors rounded-lg"
             >
               <Mail className="w-4 h-4" />

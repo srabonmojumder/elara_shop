@@ -26,7 +26,7 @@ const categories: CookieCategory[] = [
     id: "analytics",
     icon: BarChart3,
     title: "Analytics",
-    description: "Help us understand how you use BEAUTÉ so we can improve. Aggregated, never personally identifying.",
+    description: "Help us understand how you use Elara Shop so we can improve. Aggregated, never personally identifying.",
     examples: ["_ga", "_posthog", "sentry_trace"],
   },
   {
@@ -188,7 +188,7 @@ const sections = [
     title: "Managing cookies in your browser",
     content: (
       <p>
-        On top of our on-site preferences, every major browser lets you block or delete cookies directly. Note that disabling essential cookies may break parts of BEAUTÉ (like checkout).
+        On top of our on-site preferences, every major browser lets you block or delete cookies directly. Note that disabling essential cookies may break parts of Elara Shop (like checkout).
       </p>
     ),
   },
@@ -210,7 +210,7 @@ export default function CookiesPage() {
       lastUpdated="April 15, 2026"
       intro={
         <p>
-          <strong>Quick version —</strong> We use essential cookies to make BEAUTÉ work, and optional ones only if you say yes. Change your mind any time using the toggle panel below.
+          <strong>Quick version —</strong> We use essential cookies to make Elara Shop work, and optional ones only if you say yes. Change your mind any time using the toggle panel below.
         </p>
       }
       sections={sections}

@@ -21,8 +21,8 @@ const channels = [
     icon: Mail,
     title: "Email Support",
     description: "For detailed questions & account help",
-    value: "hello@beaute.com",
-    href: "mailto:hello@beaute.com",
+    value: "hello@elarashop.com",
+    href: "mailto:hello@elarashop.com",
     meta: "Replies within 24 hours",
   },
   {

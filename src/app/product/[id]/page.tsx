@@ -11,9 +11,9 @@ export function generateMetadata({ params }: { params: Promise<{ id: string }> }
   return params.then(({ id }) => {
     const product = allProducts.find((p) => p.id === Number(id));
     return {
-      title: product ? `${product.name} — BEAUTÉ` : "Product — BEAUTÉ",
+      title: product ? `${product.name} — Elara Shop` : "Product — Elara Shop",
       description: product
-        ? `Shop ${product.brand} ${product.name} at BEAUTÉ.`
+        ? `Shop ${product.brand} ${product.name} at Elara Shop.`
         : "Premium beauty product.",
     };
   });

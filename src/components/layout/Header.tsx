@@ -44,12 +44,12 @@ export default function Header() {
                   <Menu className="w-6 h-6" />
                 </button>
 
-                <a href="/" className="flex items-center gap-2.5 shrink-0">
+                <a href="/" className="flex items-center gap-2.5 shrink-0" aria-label="Elara Shop — Home">
                   <div className="w-8 h-8 bg-accent rounded flex items-center justify-center">
-                    <span className="text-white font-extrabold text-sm">B</span>
+                    <span className="text-white font-extrabold text-sm">E</span>
                   </div>
                   <span className="text-lg sm:text-xl font-extrabold tracking-tight text-text-primary">
-                    BEAUTÉ
+                    Elara Shop
                   </span>
                 </a>
               </div>

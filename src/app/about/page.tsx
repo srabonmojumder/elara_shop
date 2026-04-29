@@ -30,7 +30,7 @@ const values = [
 
 const milestones = [
   { year: "2018", title: "Founded in Milano", description: "Two sisters opened a 30m² concept store on Via Brera with 40 indie brands." },
-  { year: "2020", title: "Went digital", description: "Launched beaute.com during the pandemic — shipped to 12 countries in year one." },
+  { year: "2020", title: "Went digital", description: "Launched elarashop.com during the pandemic — shipped to 12 countries in year one." },
   { year: "2022", title: "First flagship", description: "Opened our flagship on Via Montenapoleone with an in-store skin-analysis lab." },
   { year: "2024", title: "B Corp certified", description: "Joined the global movement redefining success in business." },
   { year: "2026", title: "You, here", description: "2.4M customers, 350+ brands, and just getting started." },
@@ -54,7 +54,7 @@ export default function AboutPage() {
   return (
     <div>
       <PageHeader
-        eyebrow="About BEAUTÉ"
+        eyebrow="About Elara Shop"
         title="Beauty that feels like home"
         description="We started in a 30m² Milano concept store and grew into Europe's most-loved beauty destination — without losing the handpicked, human feel that started it all."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "About Us" }]}
@@ -65,7 +65,7 @@ export default function AboutPage() {
         <div className="relative aspect-[16/9] md:aspect-[16/7] rounded-2xl overflow-hidden mb-10">
           <Image
             src="/images/hero/hero-1.jpg"
-            alt="BEAUTÉ storefront"
+            alt="Elara Shop storefront"
             fill
             sizes="(min-width: 1280px) 1200px, 100vw"
             className="object-cover"
@@ -97,7 +97,7 @@ export default function AboutPage() {
             <SectionHeading
               eyebrow="Our story"
               title="It started with two sisters and a vision"
-              description="In 2018, Giulia and Martina Romano opened BEAUTÉ because they couldn't find a place that treated beauty the way they did — as craft, ritual, and personal expression."
+              description="In 2018, Giulia and Martina Romano opened Elara Shop because they couldn't find a place that treated beauty the way they did — as craft, ritual, and personal expression."
             />
             <div className="mt-5 space-y-4 text-sm text-text-secondary leading-relaxed">
               <p>

@@ -35,7 +35,7 @@ const sections = [
     title: "Our commitment",
     content: (
       <p>
-        BEAUTÉ is built to be usable by everyone — regardless of vision, mobility, hearing, or cognitive ability. We aim to meet or exceed the Web Content Accessibility Guidelines (WCAG) 2.2 at Level AA, and we audit every quarter against this bar.
+        Elara Shop is built to be usable by everyone — regardless of vision, mobility, hearing, or cognitive ability. We aim to meet or exceed the Web Content Accessibility Guidelines (WCAG) 2.2 at Level AA, and we audit every quarter against this bar.
       </p>
     ),
   },
@@ -49,14 +49,14 @@ const sections = [
     title: "In-store accessibility",
     content: (
       <>
-        <p>All BEAUTÉ flagship stores are:</p>
+        <p>All Elara Shop flagship stores are:</p>
         <ul className="list-disc pl-6 space-y-1">
           <li>Wheelchair accessible with step-free entrances</li>
           <li>Equipped with accessible restrooms</li>
           <li>Staffed with advisors trained in inclusive customer service</li>
           <li>Offering quiet hours every Tuesday morning (9:00–11:00) for sensory-sensitive shoppers</li>
         </ul>
-        <p>If you need anything specific for your visit, email us at <a href="mailto:access@beaute.com" className="text-accent hover:underline">access@beaute.com</a> and we'll plan ahead.</p>
+        <p>If you need anything specific for your visit, email us at <a href="mailto:access@elarashop.com" className="text-accent hover:underline">access@elarashop.com</a> and we'll plan ahead.</p>
       </>
     ),
   },
@@ -65,7 +65,7 @@ const sections = [
     title: "Compatibility",
     content: (
       <>
-        <p>BEAUTÉ is tested to work well with leading assistive technologies:</p>
+        <p>Elara Shop is tested to work well with leading assistive technologies:</p>
         <ul className="list-disc pl-6 space-y-1">
           <li>NVDA, JAWS, and VoiceOver screen readers</li>
           <li>Dragon NaturallySpeaking voice control</li>
@@ -93,11 +93,11 @@ const sections = [
     title: "Feedback & help",
     content: (
       <>
-        <p>If you encounter a barrier using BEAUTÉ, please tell us. We take accessibility reports seriously and commit to responding within 2 business days.</p>
+        <p>If you encounter a barrier using Elara Shop, please tell us. We take accessibility reports seriously and commit to responding within 2 business days.</p>
         <ul className="list-disc pl-6 space-y-1">
-          <li>Email: <a href="mailto:access@beaute.com" className="text-accent hover:underline">access@beaute.com</a></li>
+          <li>Email: <a href="mailto:access@elarashop.com" className="text-accent hover:underline">access@elarashop.com</a></li>
           <li>Phone: +39 02 1234 5678 (Mon–Fri, 9:00–19:00 CET)</li>
-          <li>Post: Accessibility Team, BEAUTÉ SRL, Via Montenapoleone 15, 20121 Milano</li>
+          <li>Post: Accessibility Team, Elara Shop SRL, Via Montenapoleone 15, 20121 Milano</li>
         </ul>
       </>
     ),
@@ -108,12 +108,12 @@ export default function AccessibilityPage() {
   return (
     <PolicyLayout
       title="Accessibility Statement"
-      description="How we build beaute.com and our stores to welcome everyone — plus where we fall short and what we're doing about it."
+      description="How we build elarashop.com and our stores to welcome everyone — plus where we fall short and what we're doing about it."
       breadcrumbs={[{ label: "Home", href: "/" }, { label: "Accessibility" }]}
       lastUpdated="April 1, 2026"
       intro={
         <p>
-          Beauty is for everyone — so BEAUTÉ should be too. This statement explains how we approach accessibility, what we've built, what we haven't yet, and how to reach us if something doesn't work for you.
+          Beauty is for everyone — so Elara Shop should be too. This statement explains how we approach accessibility, what we've built, what we haven't yet, and how to reach us if something doesn't work for you.
         </p>
       }
       sections={sections}

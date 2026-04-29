@@ -52,7 +52,7 @@ export default function SustainabilityPage() {
       <PageHeader
         eyebrow="Sustainability"
         title="Beautiful things, beautifully made"
-        description="Beauty shouldn't cost the earth — literally. Here's how we're making every step of the BEAUTÉ journey lighter on the planet, and the people on it."
+        description="Beauty shouldn't cost the earth — literally. Here's how we're making every step of the Elara Shop journey lighter on the planet, and the people on it."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Sustainability" }]}
         variant="hero"
       />
@@ -94,7 +94,7 @@ export default function SustainabilityPage() {
             />
             <div className="mt-5 space-y-4 text-sm text-text-secondary leading-relaxed">
               <p>
-                Since day one, BEAUTÉ has been built with sustainability baked into the business, not bolted on after. We vet every brand we carry on packaging, ingredients, labor, and claims — and we say no, a lot.
+                Since day one, Elara Shop has been built with sustainability baked into the business, not bolted on after. We vet every brand we carry on packaging, ingredients, labor, and claims — and we say no, a lot.
               </p>
               <p>
                 We also know we're not perfect. Some materials don't have a green alternative yet. Some supply chains are opaque. We publish what's working, what isn't, and what we're doing next.
@@ -121,7 +121,7 @@ export default function SustainabilityPage() {
           <SectionHeading
             eyebrow="Packaging breakdown"
             title="What arrives at your door"
-            description="100% plastic-free since January 2024. Here's exactly what you'll find inside your BEAUTÉ box."
+            description="100% plastic-free since January 2024. Here's exactly what you'll find inside your Elara Shop box."
           />
           <div className="mt-8 space-y-4">
             {materials.map((m) => (

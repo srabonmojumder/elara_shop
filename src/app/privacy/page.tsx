@@ -7,11 +7,11 @@ const sections = [
     content: (
       <>
         <p>
-          BEAUTÉ SRL (\"BEAUTÉ\", \"we\", \"our\") is the data controller responsible for your personal information when you visit beaute.com or shop with us in-store. We're registered in Milano, Italy, VAT IT12345678901, and our EU representative for GDPR purposes is BEAUTÉ SRL, Via Montenapoleone 15, 20121 Milano.
+          Elara Shop SRL (\"Elara Shop\", \"we\", \"our\") is the data controller responsible for your personal information when you visit elarashop.com or shop with us in-store. We're registered in Milano, Italy, VAT IT12345678901, and our EU representative for GDPR purposes is Elara Shop SRL, Via Montenapoleone 15, 20121 Milano.
         </p>
         <p>
           You can reach our Data Protection Officer any time at{" "}
-          <a href="mailto:privacy@beaute.com" className="text-accent hover:underline">privacy@beaute.com</a>.
+          <a href="mailto:privacy@elarashop.com" className="text-accent hover:underline">privacy@elarashop.com</a>.
         </p>
       </>
     ),
@@ -93,7 +93,7 @@ const sections = [
           <li>Withdraw consent at any time</li>
           <li>Complain to your local data-protection authority (in Italy, the <em>Garante</em>)</li>
         </ul>
-        <p>We respond to all rights requests within 30 days. Email <a href="mailto:privacy@beaute.com" className="text-accent hover:underline">privacy@beaute.com</a>.</p>
+        <p>We respond to all rights requests within 30 days. Email <a href="mailto:privacy@elarashop.com" className="text-accent hover:underline">privacy@elarashop.com</a>.</p>
       </>
     ),
   },
@@ -129,7 +129,7 @@ export default function PrivacyPage() {
       lastUpdated="April 15, 2026"
       intro={
         <p>
-          <strong>TL;DR —</strong> We collect the minimum data we need to run BEAUTÉ, never sell your information, and you can delete everything with a single email. This policy explains the details.
+          <strong>TL;DR —</strong> We collect the minimum data we need to run Elara Shop, never sell your information, and you can delete everything with a single email. This policy explains the details.
         </p>
       }
       sections={sections}

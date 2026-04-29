@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Elara Shop — Documentation</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #fafafa;
+    --text: #1a1a1a;
+    --muted: #666;
+    --border: #e5e7eb;
+    --accent: #e21a1f;
+    --code-bg: #0f0f0f;
+    --code-text: #f5f5f5;
+    --max: 920px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  header.hero {
+    background: linear-gradient(135deg, #0f0f0f 0%, #2a1011 100%);
+    color: #fff;
+    padding: 64px 24px;
+    text-align: center;
+  }
+  header.hero h1 {
+    margin: 0 0 12px;
+    font-size: 44px;
+    letter-spacing: -0.02em;
+    font-weight: 800;
+  }
+  header.hero p {
+    margin: 0;
+    color: #d0d0d0;
+    font-size: 18px;
+  }
+  .layout {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  nav.toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 48px;
+  }
+  nav.toc h2 {
+    margin: 0 0 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+  }
+  nav.toc ol {
+    margin: 0;
+    padding-left: 22px;
+  }
+  nav.toc li { margin: 4px 0; }
+  nav.toc a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  nav.toc a:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+  section { margin-bottom: 56px; }
+  h2 {
+    font-size: 28px;
+    margin: 0 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--accent);
+    display: inline-block;
+  }
+  h3 {
+    font-size: 20px;
+    margin-top: 32px;
+    margin-bottom: 8px;
+  }
+  p { margin: 0 0 16px; }
+  ul, ol { margin: 0 0 16px; padding-left: 24px; }
+  li { margin: 4px 0; }
+  code {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.92em;
+  }
+  pre {
+    background: var(--code-bg);
+    color: var(--code-text);
+    padding: 16px 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  pre code {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    color: inherit;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 24px;
+    font-size: 15px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+  }
+  th {
+    background: var(--surface);
+    font-weight: 600;
+  }
+  .note {
+    background: #fff8e1;
+    border-left: 4px solid #f59f00;
+    padding: 12px 16px;
+    border-radius: 4px;
+    margin: 16px 0;
+    font-size: 15px;
+  }
+  .accent { color: var(--accent); }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+    padding: 32px 24px 64px;
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>Elara Shop</h1>
+  <p>Premium eCommerce template — Next.js 15 · React 19 · Tailwind CSS 4</p>
+</header>
+
+<main class="layout">
+
+  <nav class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#getting-started">Getting Started</a></li>
+      <li><a href="#requirements">System Requirements</a></li>
+      <li><a href="#scripts">npm Scripts</a></li>
+      <li><a href="#structure">Project Structure</a></li>
+      <li><a href="#pages">Included Pages</a></li>
+      <li><a href="#customizing">Customizing the Template</a></li>
+      <li><a href="#data">Replacing Demo Data</a></li>
+      <li><a href="#dark-mode">Dark / Light Mode</a></li>
+      <li><a href="#cart-wishlist">Cart &amp; Wishlist</a></li>
+      <li><a href="#deployment">Deployment</a></li>
+      <li><a href="#credits">Credits</a></li>
+      <li><a href="#support">Support &amp; Updates</a></li>
+    </ol>
+  </nav>
+
+  <section id="getting-started">
+    <h2>1. Getting Started</h2>
+    <p>Thank you for purchasing Elara Shop. Follow the four steps below to get the template running locally.</p>
+    <ol>
+      <li>Unzip the archive you downloaded from ThemeForest.</li>
+      <li>Open a terminal in the project root.</li>
+      <li>Install dependencies with <code>npm install</code> (or <code>yarn</code> / <code>pnpm install</code>).</li>
+      <li>Start the dev server with <code>npm run dev</code> and open <code>http://localhost:3000</code>.</li>
+    </ol>
+  </section>
+
+  <section id="requirements">
+    <h2>2. System Requirements</h2>
+    <table>
+      <tr><th>Requirement</th><th>Version</th></tr>
+      <tr><td>Node.js</td><td>18.18 or newer (LTS recommended)</td></tr>
+      <tr><td>npm</td><td>9.x or newer</td></tr>
+      <tr><td>Operating system</td><td>macOS, Linux, or Windows 10+</td></tr>
+      <tr><td>Browser (for testing)</td><td>Latest Chrome, Firefox, Safari, or Edge</td></tr>
+    </table>
+  </section>
+
+  <section id="scripts">
+    <h2>3. npm Scripts</h2>
+    <table>
+      <tr><th>Command</th><th>Description</th></tr>
+      <tr><td><code>npm run dev</code></td><td>Start the local development server with hot reload.</td></tr>
+      <tr><td><code>npm run build</code></td><td>Build a production-ready static export into <code>/out</code>.</td></tr>
+      <tr><td><code>npm run start</code></td><td>Start the production server locally (after a build).</td></tr>
+      <tr><td><code>npm run lint</code></td><td>Lint the project with the Next.js linter.</td></tr>
+      <tr><td><code>npm run deploy</code></td><td>Build and deploy to Firebase Hosting.</td></tr>
+    </table>
+  </section>
+
+  <section id="structure">
+    <h2>4. Project Structure</h2>
+<pre><code>elara-shop/
+├── public/                       # Static assets
+│   └── images/                   # Hero, product, category, brand, promo
+├── src/
+│   ├── app/                      # Next.js App Router pages
+│   │   ├── layout.tsx            # Root layout, providers, metadata
+│   │   ├── page.tsx              # Homepage
+│   │   ├── globals.css           # Tailwind v4 imports + design tokens
+│   │   └── [route]/page.tsx      # Each page lives in its own folder
+│   ├── components/
+│   │   ├── layout/               # Header, Footer, MegaMenu, MobileMenu
+│   │   ├── home/                 # Hero, CategoryShowcase, ProductCarousel…
+│   │   ├── product/              # ProductCard
+│   │   ├── page/                 # PageHeader, FAQAccordion, FeatureGrid…
+│   │   ├── ui/                   # Button, Badge, IconButton, ThemeToggle…
+│   │   └── map/                  # DeliveryMap (Leaflet)
+│   ├── context/
+│   │   ├── ThemeContext.tsx      # Dark/light mode
+│   │   ├── CartContext.tsx       # Cart state
+│   │   └── WishlistContext.tsx   # Wishlist state
+│   └── data/
+│       └── mock.ts               # Demo products, categories, brands, nav
+├── documentation/                # You are here
+├── CHANGELOG.md
+├── LICENSE.md
+├── README.md
+├── next.config.ts
+├── package.json
+└── tsconfig.json
+</code></pre>
+  </section>
+
+  <section id="pages">
+    <h2>5. Included Pages</h2>
+    <table>
+      <tr><th>Route</th><th>Description</th></tr>
+      <tr><td><code>/</code></td><td>Homepage</td></tr>
+      <tr><td><code>/products</code></td><td>Product listing with filters &amp; sort</td></tr>
+      <tr><td><code>/product/[id]</code></td><td>Product detail (gallery, tabs, related)</td></tr>
+      <tr><td><code>/cart</code></td><td>Shopping cart</td></tr>
+      <tr><td><code>/checkout</code></td><td>Checkout</td></tr>
+      <tr><td><code>/order-confirmation</code></td><td>Order confirmation</td></tr>
+      <tr><td><code>/wishlist</code></td><td>Wishlist</td></tr>
+      <tr><td><code>/account</code>, <code>/login</code>, <code>/register</code></td><td>Customer accounts</td></tr>
+      <tr><td><code>/track-order</code></td><td>Order tracking</td></tr>
+      <tr><td><code>/brands</code></td><td>Brand directory</td></tr>
+      <tr><td><code>/offers</code>, <code>/offers/flash</code></td><td>Promotional pages</td></tr>
+      <tr><td><code>/gift-cards</code>, <code>/referral</code>, <code>/student</code>, <code>/affiliates</code></td><td>Loyalty pages</td></tr>
+      <tr><td><code>/blog</code>, <code>/blog/beauty-tips</code></td><td>Editorial</td></tr>
+      <tr><td><code>/about</code>, <code>/careers</code>, <code>/press</code>, <code>/sustainability</code>, <code>/stores</code>, <code>/contact</code></td><td>Company</td></tr>
+      <tr><td><code>/help</code>, <code>/shipping</code>, <code>/returns</code>, <code>/privacy</code>, <code>/terms</code>, <code>/cookies</code>, <code>/accessibility</code></td><td>Service &amp; policies</td></tr>
+    </table>
+  </section>
+
+  <section id="customizing">
+    <h2>6. Customizing the Template</h2>
+
+    <h3>Brand colors</h3>
+    <p>All design tokens are defined in <code>src/app/globals.css</code> inside the <code>@theme</code> block. Change a value once and it propagates through every component.</p>
+<pre><code>@theme {
+  --color-primary: #000000;
+  --color-accent: #e21a1f;
+  --color-accent-dark: #c41318;
+  --color-success: #02d071;
+  /* ...surface, text, and border tokens */
+}</code></pre>
+
+    <h3>Logo</h3>
+    <p>The header and footer logo currently use a colored block with the letter <strong>E</strong>. Replace the markup in <code>src/components/layout/Header.tsx</code> and <code>src/components/layout/Footer.tsx</code> with your SVG or image.</p>
+
+    <h3>Typography</h3>
+    <p>The template uses <strong>Inter</strong> from Google Fonts (loaded via <code>next/font</code>). To change it, edit the import at the top of <code>src/app/layout.tsx</code>.</p>
+
+    <h3>Site metadata &amp; SEO</h3>
+    <p>Site-wide metadata lives in <code>src/app/layout.tsx</code>. Per-page metadata can be added by exporting <code>metadata</code> (or <code>generateMetadata</code>) from each <code>page.tsx</code>.</p>
+  </section>
+
+  <section id="data">
+    <h2>7. Replacing Demo Data</h2>
+    <p>All demo content — products, categories, brands, hero slides, mega-menu items — lives in <code>src/data/mock.ts</code>. Update this file or wire it to your CMS / API and the UI will follow.</p>
+    <div class="note">
+      <strong>Tip:</strong> the existing TypeScript interfaces in <code>mock.ts</code> describe the exact shape every component expects. Keeping the same shape when you connect a real backend means zero component changes.
+    </div>
+  </section>
+
+  <section id="dark-mode">
+    <h2>8. Dark / Light Mode</h2>
+    <p>Dark mode is implemented using Tailwind 4's <code>@custom-variant dark</code>. The <code>ThemeProvider</code> in <code>src/context/ThemeContext.tsx</code> manages state, persists the choice to <code>localStorage</code>, and falls back to the system preference on first visit.</p>
+    <p>Color overrides for dark mode are defined in <code>src/app/globals.css</code> under the <code>.dark { … }</code> block.</p>
+  </section>
+
+  <section id="cart-wishlist">
+    <h2>9. Cart &amp; Wishlist</h2>
+    <p>Both features use the same architecture: a React Context provider wraps the app in <code>layout.tsx</code>, and any component reads state via the <code>useCart()</code> / <code>useWishlist()</code> hooks. State is persisted to <code>localStorage</code>.</p>
+
+    <h3>Cart API</h3>
+    <table>
+      <tr><th>Method</th><th>Description</th></tr>
+      <tr><td><code>addToCart(product, qty?)</code></td><td>Add a product or increment quantity.</td></tr>
+      <tr><td><code>removeFromCart(id)</code></td><td>Remove a product entirely.</td></tr>
+      <tr><td><code>updateQuantity(id, qty)</code></td><td>Set an exact quantity.</td></tr>
+      <tr><td><code>clearCart()</code></td><td>Empty the cart.</td></tr>
+      <tr><td><code>isInCart(id)</code></td><td>Returns <code>true</code> if present.</td></tr>
+      <tr><td><code>totalItems</code> / <code>totalPrice</code></td><td>Computed totals.</td></tr>
+    </table>
+
+    <h3>Wishlist API</h3>
+    <table>
+      <tr><th>Method</th><th>Description</th></tr>
+      <tr><td><code>toggleWishlist(product)</code></td><td>Adds if missing, removes if present.</td></tr>
+      <tr><td><code>removeFromWishlist(id)</code></td><td>Remove a product.</td></tr>
+      <tr><td><code>isInWishlist(id)</code></td><td>Membership check.</td></tr>
+      <tr><td><code>totalItems</code></td><td>Item count.</td></tr>
+    </table>
+  </section>
+
+  <section id="deployment">
+    <h2>10. Deployment</h2>
+    <p>Elara Shop is configured for static export (<code>output: "export"</code> in <code>next.config.ts</code>). Running <code>npm run build</code> produces a fully static site in <code>/out</code> that can be hosted anywhere.</p>
+    <ul>
+      <li><strong>Firebase Hosting:</strong> <code>npm run deploy</code> uses the included <code>firebase.json</code>.</li>
+      <li><strong>Vercel / Netlify:</strong> connect the repository and deploy with default Next.js settings.</li>
+      <li><strong>Any static host:</strong> upload the contents of <code>/out</code> to S3, Cloudflare Pages, GitHub Pages, Nginx, etc.</li>
+    </ul>
+    <div class="note">
+      If you need server-rendered features (e.g. a checkout API route), remove <code>output: "export"</code> from <code>next.config.ts</code> and deploy to a Node-capable host like Vercel.
+    </div>
+  </section>
+
+  <section id="credits">
+    <h2>11. Credits</h2>
+    <ul>
+      <li><a href="https://nextjs.org/" target="_blank" rel="noopener">Next.js</a> — React framework</li>
+      <li><a href="https://tailwindcss.com/" target="_blank" rel="noopener">Tailwind CSS</a> — utility-first CSS</li>
+      <li><a href="https://swiperjs.com/" target="_blank" rel="noopener">Swiper</a> — touch carousels</li>
+      <li><a href="https://lucide.dev/" target="_blank" rel="noopener">Lucide</a> — icon set</li>
+      <li><a href="https://leafletjs.com/" target="_blank" rel="noopener">Leaflet</a> — interactive map widget</li>
+      <li><a href="https://fonts.google.com/specimen/Inter" target="_blank" rel="noopener">Inter</a> — typeface</li>
+      <li><a href="https://unsplash.com/" target="_blank" rel="noopener">Unsplash</a> — preview photography (replace before launch)</li>
+    </ul>
+  </section>
+
+  <section id="support">
+    <h2>12. Support &amp; Updates</h2>
+    <p>For installation help, customization questions, or bug reports, please contact us through your ThemeForest account's profile-message system. Include:</p>
+    <ol>
+      <li>The exact step or page where you need help.</li>
+      <li>A screenshot of any error message.</li>
+      <li>Your Node.js version (<code>node -v</code>) and operating system.</li>
+    </ol>
+    <p>Free updates are provided to all license holders — see <code>CHANGELOG.md</code> for the latest changes.</p>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Elara Shop. All rights reserved. — built with care for ThemeForest customers.
+</footer>
+
+</body>
+</html>

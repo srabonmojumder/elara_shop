@@ -233,9 +233,9 @@ export default function CheckoutPage() {
           </a>
           <a href="/" className="flex items-center gap-2">
             <div className="w-7 h-7 bg-accent rounded flex items-center justify-center">
-              <span className="text-white font-extrabold text-xs">B</span>
+              <span className="text-white font-extrabold text-xs">E</span>
             </div>
-            <span className="text-lg font-extrabold tracking-tight text-text-primary">BEAUTÉ</span>
+            <span className="text-lg font-extrabold tracking-tight text-text-primary">Elara Shop</span>
           </a>
           <div className="flex items-center gap-1.5 text-xs text-text-muted">
             <Lock className="w-3.5 h-3.5" />

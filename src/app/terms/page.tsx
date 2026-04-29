@@ -6,7 +6,7 @@ const sections = [
     title: "Your agreement",
     content: (
       <p>
-        By accessing beaute.com or placing an order, you agree to these Terms of Service. If you don't agree, please don't use the site. These terms are governed by Italian law and, where applicable, EU consumer regulations.
+        By accessing elarashop.com or placing an order, you agree to these Terms of Service. If you don't agree, please don't use the site. These terms are governed by Italian law and, where applicable, EU consumer regulations.
       </p>
     ),
   },
@@ -15,7 +15,7 @@ const sections = [
     title: "Your account",
     content: (
       <>
-        <p>You may browse BEAUTÉ as a guest, but some features require an account. You agree to:</p>
+        <p>You may browse Elara Shop as a guest, but some features require an account. You agree to:</p>
         <ul className="list-disc pl-6 space-y-1">
           <li>Provide accurate, current, and complete information</li>
           <li>Keep your password confidential and secure</li>
@@ -60,14 +60,14 @@ const sections = [
     id: "intellectual-property",
     title: "Intellectual property",
     content: (
-      <p>All content on BEAUTÉ — text, images, logos, design, code — is owned by BEAUTÉ or our partners and protected by EU and international copyright law. You may browse and print for personal use, but may not reproduce, modify, or redistribute without written permission.</p>
+      <p>All content on Elara Shop — text, images, logos, design, code — is owned by Elara Shop or our partners and protected by EU and international copyright law. You may browse and print for personal use, but may not reproduce, modify, or redistribute without written permission.</p>
     ),
   },
   {
     id: "user-content",
     title: "Reviews & user content",
     content: (
-      <p>When you post a review, photo, or comment, you grant BEAUTÉ a worldwide, non-exclusive, royalty-free license to use it for promotional and editorial purposes, crediting your display name. We moderate content and may remove anything abusive, misleading, or unlawful.</p>
+      <p>When you post a review, photo, or comment, you grant Elara Shop a worldwide, non-exclusive, royalty-free license to use it for promotional and editorial purposes, crediting your display name. We moderate content and may remove anything abusive, misleading, or unlawful.</p>
     ),
   },
   {
@@ -77,8 +77,8 @@ const sections = [
       <>
         <p>Products are sold with the statutory warranties required by EU consumer law. Within the limits permitted by law:</p>
         <ul className="list-disc pl-6 space-y-1">
-          <li>BEAUTÉ is not liable for indirect or consequential damages beyond the value of the order.</li>
-          <li>We don't warrant that beaute.com will be uninterrupted or error-free, though we'll always work to keep it reliable.</li>
+          <li>Elara Shop is not liable for indirect or consequential damages beyond the value of the order.</li>
+          <li>We don't warrant that elarashop.com will be uninterrupted or error-free, though we'll always work to keep it reliable.</li>
           <li>Nothing in these terms limits your statutory consumer rights.</li>
         </ul>
       </>
@@ -109,7 +109,7 @@ export default function TermsPage() {
       lastUpdated="April 15, 2026"
       intro={
         <p>
-          These terms are between you and BEAUTÉ SRL. They cover how you can use our website, place orders, and interact with us. Nothing here limits your rights under EU consumer law.
+          These terms are between you and Elara Shop SRL. They cover how you can use our website, place orders, and interact with us. Nothing here limits your rights under EU consumer law.
         </p>
       }
       sections={sections}

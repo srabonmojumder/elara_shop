@@ -202,7 +202,7 @@ export default function StoresPage() {
     <div>
       <PageHeader
         eyebrow="Store locator"
-        title="Step inside BEAUTÉ"
+        title="Step inside Elara Shop"
         description="Six ateliers across Europe — each a space to discover, test, and be advised by our in-house experts. Book ahead or walk in anytime."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Store Locator" }]}
         variant="hero"
@@ -259,7 +259,7 @@ export default function StoresPage() {
             {filtered.length} {filtered.length === 1 ? "location" : "locations"}
           </p>
           <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-text-primary">
-            {country === "ALL" ? "Every BEAUTÉ store" : countries.find((c) => c.code === country)?.label}
+            {country === "ALL" ? "Every Elara Shop store" : countries.find((c) => c.code === country)?.label}
           </h2>
         </div>
         <a
@@ -507,7 +507,7 @@ export default function StoresPage() {
                 More than a shop. A space to <span className="text-accent italic">linger</span>.
               </h2>
               <p className="text-sm md:text-base text-text-secondary leading-relaxed mb-6">
-                Every BEAUTÉ store is designed around three services you won't find packaged anywhere else online — and every one of them is free to book.
+                Every Elara Shop store is designed around three services you won't find packaged anywhere else online — and every one of them is free to book.
               </p>
               <a
                 href="#"

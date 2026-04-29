@@ -23,14 +23,14 @@ const tiers = [
     name: "Elite",
     audience: "100K+ followers",
     commission: "20%+",
-    perks: ["White-glove onboarding", "Custom contract terms", "Featured on BEAUTÉ editorial", "Paid campaign invitations", "Bespoke gifting"],
+    perks: ["White-glove onboarding", "Custom contract terms", "Featured on Elara Shop editorial", "Paid campaign invitations", "Bespoke gifting"],
     featured: false,
   },
 ];
 
 const steps = [
   { icon: Users, title: "Apply", description: "Tell us about your audience and content style. We review every application personally." },
-  { icon: Link2, title: "Get your links", description: "Once approved, grab custom tracking links and codes for any product on BEAUTÉ." },
+  { icon: Link2, title: "Get your links", description: "Once approved, grab custom tracking links and codes for any product on Elara Shop." },
   { icon: Share2, title: "Share what you love", description: "Post to your favorite channels — Instagram, TikTok, YouTube, blog. You choose." },
   { icon: Wallet, title: "Get paid", description: "30-day cookie window. Payouts the first week of every month via bank transfer or PayPal." },
 ];
@@ -46,7 +46,7 @@ const faqs = [
   { q: "Is there a cost to join?", a: "No. The program is completely free to join and you can leave any time." },
   { q: "Do I need a minimum follower count?", a: "Not strictly — we care more about engagement and content quality than numbers. We've approved creators with 2K engaged followers and declined accounts with 500K." },
   { q: "When do I get paid?", a: "Payouts are issued the first week of every month for the previous month's confirmed sales. Minimum payout is €50 — unpaid balances roll over." },
-  { q: "Can I combine affiliate links with BEAUTÉ promo codes?", a: "Yes — your audience can use any active site-wide promo on top of your tracking link. Commissions are calculated on the discounted total." },
+  { q: "Can I combine affiliate links with Elara Shop promo codes?", a: "Yes — your audience can use any active site-wide promo on top of your tracking link. Commissions are calculated on the discounted total." },
   { q: "How long is the cookie window?", a: "30 days. If someone clicks your link and purchases within 30 days, you earn commission on that order." },
 ];
 
@@ -147,7 +147,7 @@ export default function AffiliatesPage() {
       <section className="bg-surface-secondary py-12 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            eyebrow="Why BEAUTÉ"
+            eyebrow="Why Elara Shop"
             title="Perks other programs don't offer"
             align="center"
             className="mx-auto"
@@ -178,7 +178,7 @@ export default function AffiliatesPage() {
 
       <CTASection
         eyebrow="Ready to apply?"
-        title="Join 3,200+ BEAUTÉ partners"
+        title="Join 3,200+ Elara Shop partners"
         description="Most applications are reviewed within 48 hours. We respond personally — yes, even to the 'no's."
         actions={[
           { label: "Apply now", href: "#apply", variant: "primary" },

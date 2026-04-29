@@ -1,7 +1,26 @@
 {
-  "name": "ecommerce-template",
+  "name": "elara-shop",
   "version": "1.0.0",
   "private": true,
+  "description": "Elara Shop — a premium eCommerce template for Next.js 15 and Tailwind CSS 4. Dark/light mode, cart, wishlist, product detail, and 30+ ready-to-customize pages.",
+  "author": "Luminous Labs",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "keywords": [
+    "nextjs",
+    "next15",
+    "react",
+    "react19",
+    "tailwindcss",
+    "tailwind4",
+    "ecommerce",
+    "shop",
+    "store",
+    "template",
+    "themeforest",
+    "typescript",
+    "dark-mode",
+    "swiper"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",

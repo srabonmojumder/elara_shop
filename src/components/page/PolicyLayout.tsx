@@ -110,8 +110,8 @@ export default function PolicyLayout({
             <div className="mt-16 pt-8 border-t border-border-light text-xs text-text-muted">
               <p>
                 Questions about this policy? Contact us at{" "}
-                <a href="mailto:privacy@beaute.com" className="text-accent hover:underline">
-                  privacy@beaute.com
+                <a href="mailto:privacy@elarashop.com" className="text-accent hover:underline">
+                  privacy@elarashop.com
                 </a>
                 .
               </p>

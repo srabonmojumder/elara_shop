@@ -66,10 +66,10 @@ export default function RegisterPage() {
         {/* Header */}
         <div className="text-center mb-8">
           <div className="w-14 h-14 mx-auto mb-4 bg-accent rounded-xl flex items-center justify-center">
-            <span className="text-white font-extrabold text-xl">B</span>
+            <span className="text-white font-extrabold text-xl">E</span>
           </div>
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-2">Create Account</h1>
-          <p className="text-sm text-text-secondary">Join BEAUTE for exclusive offers and faster checkout</p>
+          <p className="text-sm text-text-secondary">Join Elara Shop for exclusive offers and faster checkout</p>
         </div>
 
         {/* Social */}

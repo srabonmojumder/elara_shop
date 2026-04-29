@@ -137,12 +137,12 @@ export default function Footer() {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <a href="/" className="flex items-center gap-2 shrink-0">
+                <a href="/" className="flex items-center gap-2 shrink-0" aria-label="Elara Shop — Home">
                   <div className="w-6 h-6 bg-accent rounded flex items-center justify-center">
-                    <span className="text-white font-extrabold text-[10px]">B</span>
+                    <span className="text-white font-extrabold text-[10px]">E</span>
                   </div>
                   <span className="text-sm font-extrabold tracking-tight">
-                    BEAUTÉ
+                    Elara Shop
                   </span>
                 </a>
               </div>
@@ -182,7 +182,7 @@ export default function Footer() {
       <div className="border-t border-border-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <p className="text-[11px] text-text-muted text-center">
-            © 2026 BEAUTÉ. All rights reserved. BEAUTÉ is a registered
+            © 2026 Elara Shop. All rights reserved. Elara Shop is a registered
             trademark. All product names, logos, and brands are property of
             their respective owners.
           </p>

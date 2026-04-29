@@ -34,7 +34,7 @@ export default function LoginPage() {
         {/* Header */}
         <div className="text-center mb-8">
           <div className="w-14 h-14 mx-auto mb-4 bg-accent rounded-xl flex items-center justify-center">
-            <span className="text-white font-extrabold text-xl">B</span>
+            <span className="text-white font-extrabold text-xl">E</span>
           </div>
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-2">Welcome Back</h1>
           <p className="text-sm text-text-secondary">Sign in to your account to continue</p>

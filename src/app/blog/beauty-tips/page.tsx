@@ -180,7 +180,7 @@ export default function BlogArticlePage() {
                 <div className="min-w-0">
                   <p className="text-sm font-bold text-text-primary">Dr. Elena Moretti</p>
                   <p className="text-xs text-text-muted mt-0.5">
-                    Board-certified dermatologist practicing in Milano since 2011. Consulting editor for BEAUTÉ.
+                    Board-certified dermatologist practicing in Milano since 2011. Consulting editor for Elara Shop.
                   </p>
                 </div>
               </div>

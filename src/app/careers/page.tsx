@@ -39,8 +39,8 @@ const principles = [
 
 const teams = [
   { icon: ShoppingBag, title: "Retail & Store Operations", description: "Beauty advisors, store leads, and flagship experience teams across Milano, Paris, and London." },
-  { icon: Palette, title: "Creative & Merchandising", description: "Editors, stylists, buyers, and content producers shaping the BEAUTÉ point of view." },
-  { icon: Briefcase, title: "Product, Engineering & Data", description: "Designers and engineers building beaute.com, our apps, and internal tools." },
+  { icon: Palette, title: "Creative & Merchandising", description: "Editors, stylists, buyers, and content producers shaping the Elara Shop point of view." },
+  { icon: Briefcase, title: "Product, Engineering & Data", description: "Designers and engineers building elarashop.com, our apps, and internal tools." },
   { icon: Globe2, title: "Operations & Supply Chain", description: "Logistics, fulfilment, customer care, and the people who make same-day dispatch possible." },
 ];
 
@@ -55,19 +55,19 @@ const testimonials = [
   {
     quote: "The fastest I've ever gone from idea to live product. People here trust each other, and it shows in how we ship.",
     name: "Arianna Conti",
-    role: "Senior Product Designer · 2 yrs at BEAUTÉ",
+    role: "Senior Product Designer · 2 yrs at Elara Shop",
     initials: "AC",
   },
   {
     quote: "The retail team treats beauty like craft. Every advisor is trained for two full weeks — that's unheard of in this industry.",
     name: "Marcus Lindqvist",
-    role: "Store Lead, London · 3 yrs at BEAUTÉ",
+    role: "Store Lead, London · 3 yrs at Elara Shop",
     initials: "ML",
   },
   {
     quote: "I joined as a junior buyer and now lead skincare for EU. The learning budget wasn't a perk — it was genuinely life-changing.",
     name: "Priya Shah",
-    role: "Skincare Buyer · 4 yrs at BEAUTÉ",
+    role: "Skincare Buyer · 4 yrs at Elara Shop",
     initials: "PS",
   },
 ];
@@ -108,7 +108,7 @@ export default function CareersPage() {
       <section className="bg-surface-secondary py-12 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            eyebrow="Life at BEAUTÉ"
+            eyebrow="Life at Elara Shop"
             title="Perks, benefits & the fine print"
             align="center"
             className="mx-auto"
@@ -123,7 +123,7 @@ export default function CareersPage() {
         <SectionHeading
           eyebrow="Teams"
           title="Where you might fit"
-          description="We hire across four broad areas — each one essential to the BEAUTÉ experience."
+          description="We hire across four broad areas — each one essential to the Elara Shop experience."
         />
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
           {teams.map((t) => {
@@ -215,8 +215,8 @@ export default function CareersPage() {
         title="We review every application personally"
         description="Send us your CV or portfolio — we'll get back to you within 5 business days, whether or not there's a match."
         actions={[
-          { label: "Send an application", href: "mailto:careers@beaute.com", variant: "primary" },
-          { label: "About BEAUTÉ", href: "/about", variant: "outline" },
+          { label: "Send an application", href: "mailto:careers@elarashop.com", variant: "primary" },
+          { label: "About Elara Shop", href: "/about", variant: "outline" },
         ]}
         className="py-16 md:py-24"
       />

@@ -28,7 +28,7 @@ const faqs = [
   { q: "How do gift cards work?", a: "Once sent, your recipient gets a unique code by email. They apply it at checkout — it works like store credit and the balance updates in real time." },
   { q: "Can I schedule a delivery date?", a: "Yes — schedule up to 12 months in advance. Perfect for birthdays, anniversaries, or just-because surprises." },
   { q: "Do gift cards expire?", a: "Never. Our gift cards never expire, have no fees, and the unused balance stays on the recipient's account indefinitely." },
-  { q: "Can I buy a physical gift card?", a: "Yes — in any BEAUTÉ flagship store. Get a beautifully boxed physical card for in-store purchases, or to gift in person." },
+  { q: "Can I buy a physical gift card?", a: "Yes — in any Elara Shop flagship store. Get a beautifully boxed physical card for in-store purchases, or to gift in person." },
   { q: "What if my gift card is lost?", a: "As long as it was sent to a registered email, we can resend it — just contact support with the original purchase details." },
 ];
 
@@ -62,9 +62,9 @@ export default function GiftCardsPage() {
                 <div>
                   <div className="flex items-center gap-2 mb-4 sm:mb-8">
                     <div className="w-7 h-7 sm:w-8 sm:h-8 bg-white/20 backdrop-blur rounded flex items-center justify-center">
-                      <span className="text-white font-extrabold text-xs sm:text-sm">B</span>
+                      <span className="text-white font-extrabold text-xs sm:text-sm">E</span>
                     </div>
-                    <span className="text-base sm:text-lg font-extrabold tracking-tight">BEAUTÉ</span>
+                    <span className="text-base sm:text-lg font-extrabold tracking-tight">Elara Shop</span>
                   </div>
                   <p className="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.2em] text-white/70">
                     Gift card
@@ -236,7 +236,7 @@ export default function GiftCardsPage() {
       <section className="bg-surface-secondary py-12 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            eyebrow="Why BEAUTÉ gift cards"
+            eyebrow="Why Elara Shop gift cards"
             title="A gift that actually delivers"
             align="center"
             className="mx-auto"
